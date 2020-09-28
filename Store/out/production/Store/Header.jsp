@@ -1,14 +1,17 @@
 <%@ page language="java" contentType="text/html;charset=utf-8" import="sqlreq.*" %>
+<% String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
+	pageContext.setAttribute("path",Storepath);
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.12.2.js"></script>
-	<script src="js/head.js"></script>
-	<link rel="stylesheet" href="layui/css/layui.css">
-	<script src="layui/layui.js"></script>
+<link rel="stylesheet" href="${path}css/style.css">
+	<script src="${path}js/jquery-1.12.2.js"></script>
+	<script src="${path}js/head.js"></script>
+	<link rel="stylesheet" href="${path}layui/css/layui.css">
+	<script src="${path}layui/layui.js"></script>
 </head>
 <body>
 <div class="head">
@@ -33,7 +36,7 @@
 		</div>
 	</div>
 	<div class="top_2">
-		<div class="logo"><img src="images/logo.png" width=100%></div>
+		<div class="logo"><img src="${path}images/logo.png" width=100%></div>
 		
 		<%@ include file="tool/searc.jsp" %>
 		<%@ include file="tool/Shopping.jsp" %>
