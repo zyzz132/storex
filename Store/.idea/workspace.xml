@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Dao/CommClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommClassDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
     </list>
@@ -19,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35946113">
+    <splitter split-orientation="horizontal" split-proportion="0.5909369">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -69,8 +68,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+                <state relative-caret-position="312">
+                  <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -88,20 +87,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="604">
-                  <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+                <state relative-caret-position="330">
+                  <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/admin/commclass.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-386">
-                  <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+                <state relative-caret-position="70">
+                  <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -190,8 +189,8 @@
         <option value="$PROJECT_DIR$/web/Commdoity.jsp" />
         <option value="$PROJECT_DIR$/web/Header.jsp" />
         <option value="$PROJECT_DIR$/src/Dao/CommClassDao.java" />
-        <option value="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" />
       </list>
     </option>
   </component>
@@ -202,7 +201,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="811" />
     <option name="y" value="45" />
     <option name="width" value="1370" />
@@ -238,18 +237,6 @@
               <item name="Store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sqlreq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Store" type="b2602c69:ProjectViewProjectNode" />
@@ -296,7 +283,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601281093249" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601283795863" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -669,11 +656,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336742000" />
+    <option name="totallyTimeSpent" value="338383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
@@ -1257,20 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1280,8 +1252,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/commclass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="70">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>
