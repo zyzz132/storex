@@ -34,4 +34,18 @@ body{background-color: #f4f4f4;}
 .lb{padding:5px; margin:0px auto; width:1300px;padding-top:0px;}
 .lb #test10{width:1500px;}
 
-
+.Commod_info{width: 1300px;margin: 0 auto}
+.Commod_info>div{margin: 10px;display: inline-block;vertical-align: top}
+.Commod_info>.Commod_images{width: 400px;height: 400px;background-color: #01AAED}
+.Commod_info>.Commod_typeInfo{width: 600px;height: 400px;}
+.Commod_info>.tuijian{width: 220px;height: 400px;background-color: #01AAED}
+.Commod_info>.Commod_typeInfo>p{padding: 10px 5px;}
+.Commod_info>.Commod_typeInfo>.price{background-color: #ddd}
+.Commod_info>.Commod_typeInfo>.price>span{color:#FD482C;font-size: 22px;padding-right: 20px;}
+.Commod_info>.Commod_typeInfo>.adress{border-bottom: 1px solid #b3b3b3}
+.Commod_info>.Commod_typeInfo>.Commod_type{margin-top: 10px;}
+.Commod_info>.Commod_typeInfo>.Commod_type>.guige{margin-right: 10px;padding: 5px;border:1px solid #ddd;display: inline-block;}
+.Commod_info>.tool>.AddStorev{background-color: #FD482C;padding: 5px 10px}
+.Commod_info>.Commod_typeInfo>.tool>.count{width: 50px;height: 40px;text-align: center;margin-right: -5px;margin-left: -5px;}
+.Commod_info>.Commod_typeInfo>.tool>.countbtn{
+    border: 1px solid #0C0C0C;display: inline-block;line-height: 42px;width: 10px;padding-left: 5px ;padding-right: 5px}

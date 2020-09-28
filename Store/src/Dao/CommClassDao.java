@@ -18,6 +18,7 @@ public class CommClassDao extends BaseDao{
         Connection conn =getConnection();
         PreparedStatement ps=null;
         ResultSet rs=null;
+
         try {
 			ps=conn.prepareStatement(sql);
 			if(page==1){
