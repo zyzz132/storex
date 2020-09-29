@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dao/ShopvDaoimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="1414">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#863#870#0" expanded="true" />
@@ -224,7 +224,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601363676522" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601363676594" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -593,18 +593,18 @@
       <workItem from="1601259296867" duration="580000" />
       <workItem from="1601263377445" duration="16000" />
       <workItem from="1601264021796" duration="3738000" />
-      <workItem from="1601356240287" duration="7065000" />
+      <workItem from="1601356240287" duration="7225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345060000" />
+    <option name="totallyTimeSpent" value="345220000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="558" y="-8" width="1370" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496997" visible="true" weight="0.18625954" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496997" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" sideWeight="0.5021692" side_tool="true" weight="0.13006397" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1166,8 +1166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dao/ShopvDaoimpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="1414">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#863#870#0" expanded="true" />
