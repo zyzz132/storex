@@ -30,7 +30,26 @@ public class bill {
 
     private  String postcode;   //邮政编码
 
-    List<bill_commodity> list=new ArrayList<bill_commodity>();
+    private String payState;    //支付状态
+
+    private List<bill_commodity> list=new ArrayList<bill_commodity>();  //订单商品集合
+    public String getPayState() {
+        return payState;
+    }
+
+    public void setPayState(String payState) {
+        this.payState = payState;
+    }
+
+    public List<bill_commodity> getList() {
+        return list;
+    }
+
+    public void setList(List<bill_commodity> list) {
+        this.list = list;
+    }
+
+
 
     public int getBill_Id() {
         return Bill_Id;
@@ -128,7 +147,7 @@ public class bill {
         this.postcode = postcode;
     }
 
-    public bill(int bill_Id, int billComm_Id, String bill_address, double bill_freight, int user_Id, Date bill_Time, String bill_number, int bill_state, int bill_type, String recipients, String phne, String postcode) {
+    public bill(int bill_Id, int billComm_Id, String bill_address, double bill_freight, int user_Id, Date bill_Time, String bill_number, int bill_state, int bill_type, String recipients, String phne, String postcode, String payState, List<bill_commodity> list) {
         Bill_Id = bill_Id;
         BillComm_Id = billComm_Id;
         Bill_address = bill_address;
@@ -141,9 +160,11 @@ public class bill {
         Recipients = recipients;
         this.phne = phne;
         this.postcode = postcode;
+        this.payState = payState;
+        this.list = list;
     }
 
-    public bill(int billComm_Id, String bill_address, double bill_freight, int user_Id, Date bill_Time, String bill_number, int bill_state, int bill_type, String recipients, String phne, String postcode) {
+    public bill(int billComm_Id, String bill_address, double bill_freight, int user_Id, Date bill_Time, String bill_number, int bill_state, int bill_type, String recipients, String phne, String postcode, String payState, List<bill_commodity> list) {
         BillComm_Id = billComm_Id;
         Bill_address = bill_address;
         Bill_freight = bill_freight;
@@ -155,6 +176,8 @@ public class bill {
         Recipients = recipients;
         this.phne = phne;
         this.postcode = postcode;
+        this.payState = payState;
+        this.list = list;
     }
 
     public bill() {
