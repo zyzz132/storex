@@ -11,7 +11,6 @@ import java.util.List;
 import entity.CommodityType;
 
 public class CommoidyTypeDao extends BaseDao{
-	//添加商品规格
 	public int AddCommType(CommodityType commType){
 		//StringBuffer sb=new StringBuffer("INSERT INTO commodity_type VALUES");
 		String sql="INSERT INTO commodity_type VALUES(NULL,?,?,?,?)";

@@ -8,7 +8,6 @@ import java.util.List;
 import entity.Brand;
 
 public class BrandDao extends BaseDao{
-	//获取品牌总数量
 	public int getBrandCount(){
 		ResultSet rs=null;
 		String sql="SELECT COUNT(*) FROM brand b LEFT JOIN commodity c ON b.id = c.brand_id";
@@ -27,15 +26,10 @@ public class BrandDao extends BaseDao{
 		
 		return count;
 	}
-	//获取品牌列表，可以根据品牌名称查询
-	public List<Brand> getBrandInfo(String brand_name,int currPageNo, int numsPerPage) {
+	public List<Brand> getBrandInfo(int currPageNo, int numsPerPage) {
 		List<Brand> brands = new ArrayList<Brand>();
-		String WhereBrand_name="";
-		if(brand_name !=null){
-			WhereBrand_name="WHERE b.brand_name='"+brand_name+"'";
-		}
 		String sql = "SELECT b.id,b.brand_name,b.brand_letter,b.sort,b.isShow,COUNT(c.Commodity_Id) "+
-					"FROM brand b LEFT JOIN commodity c ON b.id = c.brand_id "+WhereBrand_name+
+					"FROM brand b LEFT JOIN commodity c ON b.id = c.brand_id "+
 					"GROUP BY b.id"
 				+"LIMIT ?,?";
 		ResultSet rs = this.executeQuery(sql, (currPageNo-1)*numsPerPage,numsPerPage);
