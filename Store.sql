@@ -33,7 +33,6 @@ CREATE TABLE `bill` (
   `Recipients` varchar(20) NOT NULL COMMENT '收件人姓名',
   `phone` varchar(20) NOT NULL COMMENT '收件人电话',
   `postcode` varchar(10) DEFAULT '000000' COMMENT '邮政编码',
-  `payState` varchar(20) NOT NULL DEFAULT '未支付' COMMENT '支付状态',
   PRIMARY KEY (`Bill_Id`),
   KEY `FK_bill` (`BillComm_Id`),
   CONSTRAINT `FK_bill` FOREIGN KEY (`BillComm_Id`) REFERENCES `bill_commodity` (`BillComm_Id`)
@@ -46,8 +45,7 @@ CREATE TABLE `bill` (
 DROP TABLE IF EXISTS `bill_commodity`;
 
 CREATE TABLE `bill_commodity` (
-  `BillComm_Id` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单商品ID  主键',
-  `Bill_Id` int(11) NOT NULL COMMENT '订单ID  Fk',
+  `BillComm_Id` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单商品ID',
   `CommType_Id` int(11) DEFAULT NULL COMMENT '商品型号ID',
   `Count` int(11) NOT NULL COMMENT '数量',
   `Price` double(5,2) DEFAULT '0.00' COMMENT '金额',
@@ -148,7 +146,7 @@ CREATE TABLE `commclass` (
   `ClassDescribe` varchar(50) DEFAULT NULL COMMENT '分类描述',
   `sort` int(11) NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`CommClass_Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
 
 /*Data for the table `commclass` */
 

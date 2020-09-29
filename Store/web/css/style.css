@@ -43,10 +43,17 @@ body{background-color: #f4f4f4;}
 .Commod_info>.Commod_typeInfo>.price{background-color: #ddd}
 .Commod_info>.Commod_typeInfo>.price>span{color:#FD482C;font-size: 22px;padding-right: 20px;}
 .Commod_info>.Commod_typeInfo>.adress{border-bottom: 1px solid #b3b3b3}
-.Commod_info>.Commod_typeInfo>.Commod_type{margin-top: 10px;margin-bottom: 30px}
+.Commod_info>.Commod_typeInfo>.Commod_type{margin-top: 10px;}
 .Commod_info>.Commod_typeInfo>.Commod_type>.guige{margin-right: 10px;padding: 5px;border:1px solid #ddd;display: inline-block;}
 .Commod_info>.tool>.AddStorev{background-color: #FD482C;padding: 5px 10px}
 .Commod_info>.Commod_typeInfo>.tool>.count{width: 50px;height: 40px;text-align: center;margin-right: -5px;margin-left: -5px;}
 .Commod_info>.Commod_typeInfo>.tool>.countbtn{
     border: 1px solid #0C0C0C;display: inline-block;line-height: 42px;width: 10px;padding-left: 5px ;padding-right: 5px}
+<<<<<<< HEAD
 .Commod_info>.Commod_typeInfo>.tool>.AddStorev{line-height: 42px;background: red;display: inline-block;padding: 0 10px;color: wheat;font-size: 16px;}
+=======
+
+
+
+/*购物车页面*/
+>>>>>>> parent of 3996a40... shopv

@@ -1,15 +1,15 @@
 package entity;
-//商品分类实体类
+
 public class CommClass {
-    private int CommClass_ID;           //商品分类ID
-    private int parentClass;            //上级分类id
-    private String CommClass_Name;      //分类名称
-    private int isShow;                 //是否显示
-    private int isNavShow;              //是否在导航显示
-    private String keyWrod;             //关键词
-    private String ClassDescribe;       //分类描述
-    private int sort;                   //排序
-    private int CommodiyCount;          //分类下的商品数量
+    private int CommClass_ID;
+    private int parentClass;
+    private String CommClass_Name;
+    private int isShow;
+    private int isNavShow;
+    private String keyWrod;
+    private String ClassDescribe;
+    private int sort;
+    private int CommodiyCount;
 
     public CommClass(int commClass_ID, int parentClass, String commClass_Name, int isShow, int isNavShow,
 			String keyWrod, String classDescribe, int sort, int commodiyCount) {
