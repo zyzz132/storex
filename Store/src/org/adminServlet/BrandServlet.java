@@ -15,7 +15,8 @@ public class BrandServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
         request.setAttribute("path",Storepath);
-        request.getRequestDispatcher(Storepath+"admin/BrandList.jsp").forward(request,resp);
+        System.out.println(Storepath);
+        request.getRequestDispatcher("BrandList.jsp").forward(request,resp);
 
     }
 
