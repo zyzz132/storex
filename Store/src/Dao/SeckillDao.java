@@ -1,5 +1,8 @@
 package Dao;
 
+import Impl.SeckillK;
+import Impl.Seckill_commodityK;
+import Impl.Seckill_timeK;
 import entity.Seckill;
 import entity.Seckill_time;
 import entity.Seckill_commodity;
@@ -11,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SeckillDao extends BaseDao implements SeckillK,Seckill_timeK,Seckill_commodityK{
+public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seckill_commodityK {
     //添加秒杀活动
     public int AddSeckill(Seckill sl) {
         String sql = "insert into seckill(`Name`,OpenDate,StopDate,isopen) values(?,?,?,?)";
