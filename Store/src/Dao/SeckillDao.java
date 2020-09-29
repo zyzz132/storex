@@ -4,13 +4,18 @@ import entity.Seckill;
 import entity.Seckill_time;
 import entity.Seckill_commodity;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SeckillDao extends BaseDao implements SeckillK,Seckill_timeK,Seckill_commodityK{
     //添加秒杀活动
     public int AddSeckill(Seckill sl) {
-        String sql = "insert into seckill(`Name`,OpenData,StopData,isopen) values(?,?,?,?)";
-        Object[] objs = new Object[]{sl.getName(),sl.getOpenData(),sl.getStopData(),sl.getIsopen()};
+        String sql = "insert into seckill(`Name`,OpenDate,StopDate,isopen) values(?,?,?,?)";
+        Object[] objs = new Object[]{sl.getName(),sl.getOpenDate(),sl.getStopDate(),sl.getIsopen()};
         return update(sql,objs);
     }
 
@@ -23,6 +28,26 @@ public class SeckillDao extends BaseDao implements SeckillK,Seckill_timeK,Seckil
 
     //查询秒杀活动
     public List<Seckill> getSeckills() {
+        List<Seckill> list = new ArrayList<Seckill>();
+        Connection conn = getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM seckill";
+        try {
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                Seckill seckill = new Seckill();
+                seckill.setId(rs.getInt("id"));
+                seckill.setName(rs.getString("Name"));
+                seckill.setOpenDate(rs.getDate("OpenDate"));
+                list.add(seckill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(conn,ps,rs);
+        }
         return null;
     }
 
@@ -47,12 +72,16 @@ public class SeckillDao extends BaseDao implements SeckillK,Seckill_timeK,Seckil
 
     //增加秒杀时间段
     public int AddSeckill_time(Seckill_time slt) {
-        return 0;
+        String sql = "INSERT INTO seckill_time(`Name`,OpenTime,StopTime,isOpen) VALUES(?,?,?,?)";
+        Object[] objs = new Object[]{slt.getName(),slt.getOpenTime(),slt.getStopTime(),slt.getIsOpen()};
+        return update(sql,objs);
     }
 
     //删除秒杀时间段
     public int delSeckill_time(int id) {
-        return 0;
+        String sql = "DELETE FROM seckill_time WHERE id=?";
+        Object[] objs = new Object[]{id};
+        return update(sql,objs);
     }
 
     //获取秒杀时间段列表

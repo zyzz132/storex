@@ -6,8 +6,8 @@ import java.util.Date;
 public class Seckill {
     private int id;             //编号
     private String Name;        //秒杀活动名称
-    private Date OpenData;      //开始日期
-    private Date stopData;      //结束日期
+    private Date OpenDate;      //开始日期
+    private Date stopDate;      //结束日期
     private int isopen;         //是否启动(1=开始 0=关闭)
 
     public int getId() {
@@ -26,20 +26,20 @@ public class Seckill {
         Name = name;
     }
 
-    public Date getOpenData() {
-        return OpenData;
+    public Date getOpenDate() {
+        return OpenDate;
     }
 
-    public void setOpenData(Date openData) {
-        OpenData = openData;
+    public void setOpenDate(Date openDate) {
+        OpenDate = openDate;
     }
 
-    public Date getStopData() {
-        return stopData;
+    public Date getStopDate() {
+        return stopDate;
     }
 
-    public void setStopData(Date stopData) {
-        this.stopData = stopData;
+    public void setStopDate(Date stopDate) {
+        this.stopDate = stopDate;
     }
 
     public int getIsopen() {

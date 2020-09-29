@@ -7,7 +7,7 @@ public class Seckill_time {
     private int id;         //编号
     private String Name;    //时间段名称
     private Time OpenTime;  //开始时间
-    private Time SoptTime;  //结束时间
+    private Time StopTime;  //结束时间
     private int isOpen;     //是否启动(1:0)
 
     public int getId() {
@@ -34,12 +34,12 @@ public class Seckill_time {
         OpenTime = openTime;
     }
 
-    public Time getSoptTime() {
-        return SoptTime;
+    public Time getStopTime() {
+        return StopTime;
     }
 
-    public void setSoptTime(Time soptTime) {
-        SoptTime = soptTime;
+    public void setStopTime(Time stopTime) {
+        StopTime = stopTime;
     }
 
     public int getIsOpen() {
@@ -53,18 +53,18 @@ public class Seckill_time {
     public Seckill_time() {
     }
 
-    public Seckill_time(String name, Time openTime, Time soptTime, int isOpen) {
+    public Seckill_time(String name, Time openTime, Time stopTime, int isOpen) {
         Name = name;
         OpenTime = openTime;
-        SoptTime = soptTime;
+        StopTime = stopTime;
         this.isOpen = isOpen;
     }
 
-    public Seckill_time(int id, String name, Time openTime, Time soptTime, int isOpen) {
+    public Seckill_time(int id, String name, Time openTime, Time stopTime, int isOpen) {
         this.id = id;
         Name = name;
         OpenTime = openTime;
-        SoptTime = soptTime;
+        StopTime = stopTime;
         this.isOpen = isOpen;
     }
 }
