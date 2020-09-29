@@ -103,6 +103,7 @@
         <entry file="file://$PROJECT_DIR$/web/Header.jsp">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="26">
               <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="47" />
             </state>
@@ -123,6 +124,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
+=======
+            <state relative-caret-position="380">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+>>>>>>> parent of 3996a40... shopv
 =======
             <state relative-caret-position="380">
               <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
@@ -321,7 +326,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601363824677" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601363676522" />
+>>>>>>> parent of 3996a40... shopv
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601363676522" />
 >>>>>>> parent of 3996a40... shopv
@@ -694,6 +703,7 @@
       <workItem from="1601263377445" duration="16000" />
       <workItem from="1601264021796" duration="3738000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1601297865995" duration="1505000" />
       <workItem from="1601316985123" duration="128000" />
       <workItem from="1601348831684" duration="1385000" />
@@ -701,10 +711,14 @@
 =======
       <workItem from="1601356240287" duration="7065000" />
 >>>>>>> parent of 3996a40... shopv
+=======
+      <workItem from="1601356240287" duration="7065000" />
+>>>>>>> parent of 3996a40... shopv
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="347881000" />
   </component>
@@ -719,15 +733,21 @@
 =======
     <option name="totallyTimeSpent" value="345060000" />
 >>>>>>> parent of 3996a40... shopv
+=======
+    <option name="totallyTimeSpent" value="345060000" />
+>>>>>>> parent of 3996a40... shopv
   </component>
   <component name="ToolWindowManager">
     <frame x="558" y="-8" width="1370" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.1337953" />
       <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
 =======
+=======
+>>>>>>> parent of 3996a40... shopv
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496997" visible="true" weight="0.18625954" />
       <window_info id="Structure" order="1" sideWeight="0.5021692" side_tool="true" weight="0.13006397" />
 >>>>>>> parent of 3996a40... shopv
@@ -1294,8 +1314,13 @@
     <entry file="file://$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="468">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+=======
+        <state relative-caret-position="380">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+>>>>>>> parent of 3996a40... shopv
 =======
         <state relative-caret-position="380">
           <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
