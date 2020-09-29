@@ -6,175 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommoidyTypeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommoidyTypeDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Coods/CommClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Coods/Commodity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Coods/CommodityTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/BrandDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/CommClassDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/CommodityImageDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/CommodiyDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/CommoidyTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/SeckillDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/SeckillK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/Seckill_commodityK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/Dao/Seckill_timeK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/BrandList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/CommClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/Commodity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/CommodityImage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/CommodityTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/CommodityType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/Seckill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/Seckill_commodity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/Seckill_time.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/bill_commodity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/sendadress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/shopv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/entity/userwealth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/org/brand/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/org/brand/brandDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/org/servlet/FileServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/org/servlet/TopicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/serice/CommCalssService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/serice/CommTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/TestServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/UserTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/mysqlConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Store/sqlreq/user.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/BrandDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/BrandDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/CommoidyTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommoidyTypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/BrandList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/BrandList.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dao/BrandDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding>
-                <element signature="e#674#681#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/admin/BrandList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Brand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/bill.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#690#706#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#956#957#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dao/CommodityImageDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dao/CommoidyTypeDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-              <folding>
-                <element signature="method#AddCommType#0;class#CommoidyTypeDao#0" />
-                <element signature="method#getCommTypes#0;class#CommoidyTypeDao#0" />
-                <element signature="method#getCommID_Types#0;class#CommoidyTypeDao#0" />
-                <element signature="method#DelCommType#0;class#CommoidyTypeDao#0" />
-                <element signature="method#getCommTypesID#0;class#CommoidyTypeDao#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -271,7 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,29 +125,14 @@
             <path>
               <item name="Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -692,7 +515,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347881000" />
+    <option name="totallyTimeSpent" value="347937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,9 +528,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
