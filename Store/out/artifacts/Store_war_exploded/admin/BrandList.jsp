@@ -13,9 +13,10 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body style="padding: 20px">
     <div class="box_B">
-        <span>数据列表</span>
+        <span>数据列表${path};</span>
         <a href="tool/AddBrand.jsp" class="btn_B">添加</a>
     </div>
     <table border="0" cellspacing="0"cellpadding="0" id="talbe_a">
