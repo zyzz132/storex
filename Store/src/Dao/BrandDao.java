@@ -32,10 +32,10 @@ public class BrandDao extends BaseDao{
 		List<Brand> brands = new ArrayList<Brand>();
 		ResultSet rs=null;
 		String WhereBrand_name="";
-		if(brand_name !=null){
-			WhereBrand_name="WHERE b.brand_name='"+brand_name+"'";
+		if(brand_name !=null && !brand_name.equals("")){
+			WhereBrand_name="WHERE b.brand_name=?";
 		}
-		String sql = "SELECT b.id,b.brand_name,b.brand_letter,b.sort,b.isShow,COUNT(c.Commodity_Id) AS COUNT "+
+		String sql = "SELECT  b.*,COUNT(c.Commodity_Id) AS COUNT "+
 					"FROM brand b LEFT JOIN commodity c ON b.id = c.brand_id "+WhereBrand_name+
 					"GROUP BY b.id "
 				+"LIMIT ?,?";
@@ -44,7 +44,8 @@ public class BrandDao extends BaseDao{
 		}else{
 			currPageNo=(currPageNo-1)*numsPerPage;
 		}
-		if(brand_name !=null){
+		if(brand_name !=null && !brand_name.equals("")){
+			System.out.println(brand_name);
 			rs = this.executeQuery(sql, brand_name,currPageNo,numsPerPage);
 		}else{
 			rs = this.executeQuery(sql, currPageNo,numsPerPage);
@@ -58,6 +59,7 @@ public class BrandDao extends BaseDao{
 				brand.setBrand_letter(rs.getString("brand_letter"));
 				brand.setSort(rs.getInt("sort"));
 				brand.setIsShow(rs.getInt("isShow"));
+				brand.setBrand_manufacturer(rs.getString("brand_manufacturer"));
 				brand.setCommodCount(rs.getInt("count"));
 				brands.add(brand);
 			}
@@ -71,7 +73,7 @@ public class BrandDao extends BaseDao{
 		ResultSet rs=null;
 		int num=-1;
 		if(brand_name!=null){
-			sql+="WHERE b.brand_name=?";
+			sql+="WHERE brand_name=?";
 			rs=this.executeQuery(sql,brand_name);
 		}else{
 			rs=this.executeQuery(sql);

@@ -19,10 +19,12 @@ public class BrandServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
+        request.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;charset=UTF-8");
         request.setAttribute("path",Storepath);
         PrintWriter out=resp.getWriter();
         String Spage=request.getParameter("page");
-        String brand_name=request.getParameter("brand_name");
+        String brand_name=request.getParameter("suo");
         int page=1;
         int limit=10;
         if(Spage!=null){
@@ -34,12 +36,14 @@ public class BrandServlet extends HttpServlet {
         }
         BrandSerice bs=new BrandSerice();
         List<Brand> list=bs.getBrandInfo(brand_name,page,limit);
-        StringBuffer sb=new StringBuffer("[");
+        StringBuffer sb=new StringBuffer("{\"code\":0,\"msg\":\"\",\"count\":"+bs.getBrandInfoCount(brand_name)+",\"data\":[");
         for(int i=0;i<list.size();i++){
             sb.append(JSON.toJSONString(list.get(i)));
-
+            if(i!=list.size()-1){
+                sb.append(",");
+            }
         }
-        sb.append("]"+bs.getBrandInfoCount(null));
+        sb.append("]}");
         System.out.println(bs.getBrandInfoCount(null));
         out.println(sb.toString());
 
