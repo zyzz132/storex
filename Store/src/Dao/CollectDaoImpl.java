@@ -1,6 +1,5 @@
 package Dao;
 
-import Impl.CollectDao;
 import entity.Collect;
 
 import java.sql.Connection;
