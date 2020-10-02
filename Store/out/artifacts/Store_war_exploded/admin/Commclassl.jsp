@@ -10,10 +10,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="../layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
- 
-<table class="layui-hide" id="test"></table>
+<body class="listtable">
+  <div class="subject">
+    <div class="tool box_B">
+      <span>数据列表</span>
+      <a href="tool/AddClass.jsp"  target="myiframe"  class="btn_B">添加</a>
+    </div>
+
+    <table class="layui-hide" id="test"></table>
+  </div>
+
  
 <script type="text/html" id="switchTpl">
   <!-- 这里的 checked 的状态只是演示 -->
@@ -22,7 +30,7 @@
  
 <script type="text/html" id="checkboxTpl">
   <!-- 这里的 checked 的状态只是演示 -->
-  <input type="checkbox" name="lock" value="{{d.id}}" title="锁定" lay-filter="lockDemo" {{ d.id == 10006 ? 'checked' : '' }}>
+<%--  <input type="checkbox" name="lock" value="{{d.id}}" title="锁定" lay-filter="lockDemo" {{ d.id == 10006 ? 'checked' : '' }}>--%>
 </script>
 
               
@@ -38,24 +46,27 @@ layui.use('table', function(){
     ,url:'../topic?prol=getCommClass'
     ,cellMinWidth: 100
     ,cols: [[
-      ,{field:'CommClass_Id', title:'ID', width:100, unresize: true, sort: true}
-      ,{field:'CommClass_Name', title:'用户名', templet: '#usernameTpl'}
-      ,{field:'commodiyCount', title:'商品数量'}
-      ,{field:'parentClass', title: '级别', minWidth:120, sort: true}
-      ,{field:'isShow', title:'是否显示', width:85, templet: '#switchTpl', unresize: false}
+      {field:'CommClass_Id', title:'ID', width:100, unresize: true, sort: true,align:'center'}
+      ,{field:'CommClass_Name', title:'用户名', templet: '#usernameTpl',align:'center'}
+      ,{field:'commodiyCount', title:'商品数量',align:'center'}
+      ,{field:'parentClass', title: '级别',align:'center', minWidth:120, sort: true}
+      ,{title:'是否显示',align:'center', width:85, templet:function (d) {
+          var isShow='<input type="checkbox" name="isShow" lay-skin="switch" lay-filter="switchTest" >';
+          if(d.isShow=="是"){
+            isShow='<input type="checkbox" checked="" name="isShow" lay-skin="switch" lay-filter="switchTest" >'
+          }
+          return isShow;
+        }}
+      ,{field: 'sort',title: '排序',width: 100,align:'center'}
+      ,{title: '操作',width: 140,align: "center",templet: function () {
+          var button1='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs upbtn">编辑</button>';
+          var button2='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs delbtn" >删除</button></td>';
+          return button1+button2;
+        }}
     ]]
     ,page: true
   });
-  
-  //监听性别操作
-  form.on('switch(sexDemo)', function(obj){
-    layer.tips(this.value + ' ' + this.name + '：'+ obj.elem.checked, obj.othis);
-  });
-  
-  //监听锁定操作
-  form.on('checkbox(lockDemo)', function(obj){
-    layer.tips(this.value + ' ' + this.name + '：'+ obj.elem.checked, obj.othis);
-  });
+
 });
 </script>
 

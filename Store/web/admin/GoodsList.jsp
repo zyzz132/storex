@@ -14,25 +14,30 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="../layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="css/style.css">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
-<body style="padding: 20px">
-<div class="box_B">
-    <span>数据列表</span>
-    <a href="tool/AddGood.jsp?prol=add" class="btn_B">添加</a>
-</div>
+<body class="listtable">
+    <div class="subject">
+        <div class="box_B">
+            <span>数据列表</span>
+            <a href="javascript:add2()" class="btn_B">添加</a>
+        </div>
 
-<table id="demo" lay-filter="test"></table>
+        <table id="demo" lay-filter="test"></table>
+
+    </div>
 
 
 <script src="../layui/layui.js" charset="utf-8"></script>
-
+<script src="js/GoodsList.js"></script>
 <style>
-	td>.layui-table-cell{height: 130px;padding: 10px;}
+	td>.layui-table-cell{height: 110px;}
 	td>.layui-table-cell>p{padding: 5px;}
 	th>.layui-table-cell{height: 41px;line-height: 41px;}
+    .laytable-cell-1-0-0{line-height: 110px;}
 </style>
 
 <script>
@@ -46,13 +51,13 @@
             ,page: true 
             ,cols: [[
                 {field:'Commodity_Id', width:80, title: 'ID', sort: true,align:'center'	}
-				,{field:'CommImage_Url',width:120,title:'商品图片',style:"height:80px",templet:function(d){
+				,{field:'CommImage_Url',width:140,title:'商品图片',style:"height:80px",templet:function(d){
 					return "<img src='../upload/"+d.CommImage_Url+"' alt='' style='width:80px;height: 80px;'/>"},align:'center'	}
                 ,{title: '商品名称',align:'center',templet:function(d){
-                	return '<p>'+d.Commodity_Name+'</p>'+'<p>'+d.CommClass_Id+'</p>';
+                	return '<div style="padding: 5% 0px;"><p>'+d.Commodity_Name+'</p>'+'<p>'+d.CommClass_Id+'</p></div>';
                 }}
                 ,{width:200, title: '副标题',align:'center',templet:function(d){
-                	return '<p>价格：￥'+d.selling_price+'</p>'+'<p>货号：'+d.Commodity_No+'</p>';
+                	return '<div style="padding: 5% 0px;"><p>价格：￥'+d.selling_price+'</p>'+'<p>货号：'+d.Commodity_No+'</p></div>';
                 }}
 				,{width:150, title: '标签',align:'center'	,templet:function(d){
 					var putawayHtml='<p>上架：<input type="checkbox" name="putaway" lay-skin="switch" lay-filter="switchTest" ></p>';
@@ -73,24 +78,30 @@
                 ,{width:80, title: 'SKU库',align:'center',templet:function(){}}
                 ,{field:'market_price', width:135, title: '财富',align:'center'	 }
 				,{title:'是否显示', width:130, templet:function(){
-					var btn1='<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">编辑</button>';
-					var btn2='<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">删除</button>';
-					return btn1+btn2;
+                    var button1='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs upbtn">编辑</button>';
+                    var button2='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs delbtn" >删除</button></td>';
+                    return button1+button2;
 				}}
             ]]
         	,limit:5
 			,limits:[5,10,15,20]
 
         });
+
     });
   //页面层
+    function add2() {
 
-    layer.open({
-      type: 1,
-      skin: 'layui-layer-rim', //加上边框
-      //area: ['420px', '240px'], //宽高
-      content: 'html内容'
-    });
+        layer.open({
+            type: 2,
+            title:'添加品牌',
+            area: ['765px', '750px'],
+            fixed: false, //不固定
+            maxmin: true,
+            content: 'tool/AddGood.jsp?prol=add'
+        });
+    }
+
 </script>
 
 </body>
