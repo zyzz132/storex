@@ -68,6 +68,7 @@ public class BrandDao extends BaseDao{
 		}
 		return brands;
 	}
+	//查询
 	public int getBrandInfoCount(String brand_name){
 		String sql="SELECT count(*) from brand ";
 		ResultSet rs=null;
@@ -85,5 +86,27 @@ public class BrandDao extends BaseDao{
 			e.printStackTrace();
 		}
 		return num;
+	}
+	//
+	public List<Brand> getBrandlist(){
+		List<Brand> list=new ArrayList<Brand>();
+		ResultSet rs=null;
+		String sql="select * FROM brand";
+		rs=executeQuery(sql);
+		try {
+			while(rs.next()){
+				Brand br=new Brand();
+				br.setId(rs.getInt("id"));
+				br.setBrand_name(rs.getString("brand_name"));
+				br.setBrand_letter(rs.getString("brand_letter"));
+				br.setSort(rs.getInt("sort"));
+				br.setIsShow(rs.getInt("isShow"));
+				br.setBrand_manufacturer(rs.getString("brand_manufacturer"));
+				list.add(br);
+			}
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
+		return list;
 	}
 }

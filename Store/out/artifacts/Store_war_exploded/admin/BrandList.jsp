@@ -20,11 +20,11 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="padding: 20px">
+<body class="listtable">
     <div class="subject">
         <div class="filtrate">
             <form action="${Spage}/admin/BrandList.jsp" method="post">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="layui-inline">
-
+ 
                     <div class="layui-input-inline">
                         <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">搜索</button>
                     </div>
@@ -46,7 +46,7 @@
         </div>
         <div class="box_B">
 
-            <a href="tool/AddBrand.jsp" class="btn_B">添加</a>
+            <a href="javascript:add2()" class="btn_B">添加</a>
         </div>
         <table class="layui-hide" id="test"></table>
         <script src="../layui/layui.js" charset="utf-8"></script>
@@ -81,11 +81,26 @@
                         {title: "相关",align:'center',width:150,templet:function (d) {
                                 var commdCount='商品： '+d.commodCount;
                                 return commdCount;
+                            }},
+                        {title: "操作",align: 'center',width:150,templet:function (d) {
+                                var button1='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs upbtn">编辑</button>';
+                                var button2='<button type="button" class="layui-btn layui-btn-primary layui-btn-xs delbtn" >删除</button></td>';
+                                return button1+button2;
                             }}
                     ]]
                 })
             })
+            function add2() {
 
+                layer.open({
+                    type: 2,
+                    title:'添加品牌',
+                    area: ['765px', '750px'],
+                    fixed: false, //不固定
+                    maxmin: true,
+                    content: 'tool/AddBrand.jsp'
+                });
+            }
         </script>
     </div>
 

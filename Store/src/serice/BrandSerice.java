@@ -15,4 +15,8 @@ public class BrandSerice {
         BrandDao brandDao=new BrandDao();
         return brandDao.getBrandInfoCount(brand_name);
     }
+    public List<Brand> getBrandList(){
+        BrandDao brandDao=new BrandDao();
+        return brandDao.getBrandlist();
+    }
 }

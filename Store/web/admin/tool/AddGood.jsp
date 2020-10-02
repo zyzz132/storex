@@ -6,6 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"  import="sqlreq.*" %>
+<%@ page import="serice.BrandSerice" %>
+<%@ page import="java.util.List" %>
+<%@ page import="entity.Brand" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     user userinfo=(user)session.getAttribute("Userinfo");
     if(userinfo!=null){
@@ -21,7 +25,9 @@
     <%
     }
     String type=request.getParameter("prol");
-    
+    BrandSerice brandSerice=new BrandSerice();
+    List<Brand> brandlist=brandSerice.getBrandList();
+    request.setAttribute("brandList",brandlist);
 %>
 <html>
 <head>
@@ -33,8 +39,8 @@
 	var types='<%=type%>';
 	</script>
 </head>
-<body style="padding: 20px">
-<div class="box_A addclassbox">
+<body style="padding: 20px;background-color: white">
+<%--<div class="box_A addclassbox">--%>
     <div class="lc_c">
         <div class="lc_c_l"><div class="bz_x"><div class="bz" style="color: #000;border-color: #000">1</div><div class="bz_xian"></div></div><div class="bz_text" style="color: #000">填写商品信息</div></div>
         <div class="lc_c_l"><div class="bz_x"><div class="bz">2</div><div class="bz_xian"></div></div><div class="bz_text">填写商品属性</div></div>
@@ -75,9 +81,9 @@
             <div class="layui-input-inline">
                 <select name="brand_id"  >
                     <option value="0">请选择</option>
-                    <%
-                        out.print(((admin) userinfo).getFirstClass(0));
-                    %>
+                    <c:forEach items="${brandList}" var="br">
+                        <option value="${br.id}"><c:out value="${br.brand_name}"></c:out></option>
+                    </c:forEach>
                 </select>
             </div>
         </div>
@@ -129,7 +135,7 @@
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </form>
-</div>
+<%--</div>--%>
 
 </body>
 <script src="../../layui/layui.js" charset="utf-8"></script>

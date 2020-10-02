@@ -1,7 +1,7 @@
 body{
     padding: 20px;
-    background-color: #F2F2F2;
 }
+.listtable{background-color: #F2F2F2;padding: 20px}
 .btn_B{background-color: #1E9FFF;border-radius: 3px;line-height: 30px;padding: 0 10px;display: inline-block;color: white;
     }
 .btn_B:hover{background-color:#4db3ff;color:white}
@@ -62,9 +62,6 @@ body{
 .addTypex>p:first-child{width: 200px}
 .addTypex>p{width: 100px;display: inline-block;line-height: 32px;margin-right: 12px;margin-top: 10px;margin-bottom: 20px;}
 
-.subject{
-    background-color: white;
-    padding: 10px;
-}
+.subject{background-color: white;padding: 10px;}
 /*筛选*/
 .filtrate{padding: 10px;}
