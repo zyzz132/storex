@@ -29,6 +29,7 @@
 <script src="../layui/layui.js" charset="utf-8"></script>
  
 <script>
+
 layui.use('table', function(){
   var table = layui.table
   ,form = layui.form;
