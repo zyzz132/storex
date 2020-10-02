@@ -282,7 +282,7 @@ DROP TABLE IF EXISTS `seckill_time`;
 
 CREATE TABLE `seckill_time` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '编号',
-  `Name` varchar(40) NOT NULL COMMENT '时间段名称',
+  `Nmae` varchar(40) NOT NULL COMMENT '时间段名称',
   `OpenTime` time NOT NULL COMMENT '开始时间',
   `StopTime` time NOT NULL COMMENT '结束时间',
   `isOpen` int(1) DEFAULT '0' COMMENT '是否启动（1：0）',

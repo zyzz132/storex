@@ -1,4 +1,4 @@
-package Impl;
+package Dao;
 
 import entity.Seckill_commodity;
 

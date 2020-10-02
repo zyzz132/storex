@@ -71,7 +71,7 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">所有商品</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="Commclassl.jsp"  target="myiframe">商品分类</a></dd>
+                        <dd><a href="commclass.jsp"  target="myiframe">商品分类</a></dd>
                         <dd><a href="GoodsList.jsp" target="myiframe">商品管理</a></dd>
                         <dd><a href="BrandList.jsp" target="myiframe">品牌管理</a></dd>
                     </dl>

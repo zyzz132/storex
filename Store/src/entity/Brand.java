@@ -10,16 +10,7 @@ public class Brand {
 	private int sort;				
 	private int isShow;				
 	private String brand_manufacturer;	
-	private int commodityNums;
-	private int CommodCount;
-
-	public int getCommodCount() {
-		return CommodCount;
-	}
-
-	public void setCommodCount(int commodCount) {
-		CommodCount = commodCount;
-	}
+	private int commodityNums;		
 
 	public Brand() {
 		super();

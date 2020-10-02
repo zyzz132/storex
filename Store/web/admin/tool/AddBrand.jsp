@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../../js/jquery-1.12.2.js"></script>
 </head>
-<body style="padding: 20px;background-color: white">
+<body style="padding: 20px">
+
+<div class="box_A addclassbox">
     <form action="${path}topic" method="post" class="layui-form">
         <input type="hidden" name="prol" value="AddBran">
         <div class="layui-form-item">
@@ -84,6 +86,7 @@
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </form>
+</div>
 </body>
 <script src="../../layui/layui.js"></script>
 <script>
