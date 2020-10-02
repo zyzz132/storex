@@ -70,9 +70,12 @@ public class BaseDao {
         ResultSet rs = null;
         try {
             pstmt = conn.prepareStatement(sql);
-            for (int i = 0; i < params.length; i++) {
-                pstmt.setObject(i + 1, params[i]);
+            if(params!=null){
+                for (int i = 0; i < params.length; i++) {
+                    pstmt.setObject(i + 1, params[i]);
+                }
             }
+
             rs = pstmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();

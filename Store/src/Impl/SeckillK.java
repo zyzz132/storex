@@ -1,4 +1,4 @@
-package Dao;
+package Impl;
 
 import entity.Seckill;
 
