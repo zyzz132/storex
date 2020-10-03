@@ -9,7 +9,14 @@
 <%@ include file="../Header.jsp" %>
 
 <div class="Commod_info">
-    <div class="Commod_images"></div>
+    <div class="Commod_images">
+        <div class="CommdImagK"><img src="../images/test1.jpg" alt=""></div>
+        <ul class="Commdimaglist">
+            <li><img src="../images/test1.jpg" alt=""></li>
+            <li><img src="../images/test1.jpg" alt=""></li>
+            <li><img src="../images/test1.jpg" alt=""></li>
+        </ul>
+    </div>
     <%--商品信息--%>
     <div class="Commod_typeInfo">
         <h2 class="Commod_title">商品名称</h2>
@@ -26,5 +33,6 @@
         </div>
     </div>
 
-    <div class="tuijian"></div>
+
 </div>
+<%@ include file="../Footer.jsp" %>

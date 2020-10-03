@@ -18,7 +18,7 @@
 	<div class="top_1">
 		<div class="nav_top">
 			<ul class="kjsc">
-				<li><a href="index.jsp">首页</a></li>
+				<li><a href="${path}index.jsp">首页</a></li>
 				<li><a href="">武汉</a></li>
 			</ul>
 			<ul class="loginInfo">
@@ -27,9 +27,9 @@
 					<li><a href="" id="user_info"><%=userinfo.get_name()%></a></li>
 					<li><a href="">我的订单</a></li>
 				<% 	}else{%>
-					<li><a href="login.jsp" id="login_a">登录</a></li>
-					<li><a href="admin/admin.jsp" >后台</a></li>
-					<li><a href="Register.jsp" id="reg_a">注册</a></li>
+					<li><a href="${path}login.jsp" id="login_a">登录</a></li>
+					<li><a href="${path}admin/admin.jsp" >后台</a></li>
+					<li><a href="${path}Register.jsp" id="reg_a">注册</a></li>
 				<%	}%>
 
 			</ul>
@@ -41,5 +41,5 @@
 		<%@ include file="tool/searc.jsp" %>
 		<%@ include file="tool/Shopping.jsp" %>
 	</div>
-	
+	<%@ include file="nav.jsp" %>
 </div>
