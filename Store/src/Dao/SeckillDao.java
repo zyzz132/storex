@@ -4,8 +4,8 @@ import Impl.SeckillK;
 import Impl.Seckill_commodityK;
 import Impl.Seckill_timeK;
 import entity.Seckill;
-import entity.Seckill_time;
 import entity.Seckill_commodity;
+import entity.Seckill_time;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

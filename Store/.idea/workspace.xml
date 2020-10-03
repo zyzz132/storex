@@ -31,15 +31,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/serice/BrandSerice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/Seckill_commodityK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/Seckill_timeK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/serice/BrandSerice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/lib/fastjson-1.2.13.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/META-INF/Store.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SeckillK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/SeckillK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/Seckill_commodityK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/Seckill_commodityK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/Seckill_timeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/Seckill_timeK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/s.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/Store.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Collectimpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Seckill_commodityK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Seckill_timeK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/WEB-INF/classes/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/WEB-INF/classes/web/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/production/Store/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/production/Store/web/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/130939160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/180497649.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/185605425.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/191088680.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/216074673.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/221864699.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/221930979.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/242527949.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/255190759.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/278308162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/290076651.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/348041961.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/355648941.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/360702715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/412612130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/458176487.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/509304024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/555317507.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/561215906.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/569951524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/595891830.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/596939217.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/60138409.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/633168933.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/650292913.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/671860200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/754664842.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/759019641.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/77697961.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/785775363.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/792379689.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/821191021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/83207611.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/892709789.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/902644669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/956473572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/973079698.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/976052449.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/99968091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SeckillDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +138,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -445,7 +493,9 @@
       <workItem from="1601264021796" duration="3738000" />
       <workItem from="1601297865995" duration="1505000" />
       <workItem from="1601316985123" duration="128000" />
-      <workItem from="1601695545280" duration="15770000" />
+      <workItem from="1601695545280" duration="15866000" />
+      <workItem from="1601711745491" duration="628000" />
+      <workItem from="1601712388760" duration="424000" />
     </task>
     <task id="LOCAL-00001" summary="商品收藏">
       <created>1601646754644</created>
@@ -461,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601711060704</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="导航与尾部文件">
+      <created>1601711641425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601711641425</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,85 +551,86 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="商品收藏" />
     <MESSAGE value="导航与尾部文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="导航与尾部文件" />
+    <MESSAGE value="重编译" />
+    <option name="LAST_COMMIT_MESSAGE" value="重编译" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="274" key="#Project_Structure" timestamp="1601711627998">
+    <state x="760" y="274" key="#Project_Structure" timestamp="1601712590405">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711627998" />
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712590405" />
     <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601646667640">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601646667640" />
-    <state x="954" y="440" key="FileChooserDialogImpl" timestamp="1601711589131">
+    <state x="954" y="440" key="FileChooserDialogImpl" timestamp="1601712557661">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711589131" />
-    <state width="1741" height="300" key="GridCell.Tab.0.bottom" timestamp="1601711201832">
+    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712557661" />
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.0.center" timestamp="1601711201831">
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.0.center" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201831" />
-    <state width="1741" height="300" key="GridCell.Tab.0.left" timestamp="1601711201831">
+    <state width="1741" height="300" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.0.left" timestamp="1601712770148">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201831" />
-    <state width="1741" height="300" key="GridCell.Tab.0.right" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770148" />
+    <state width="1741" height="300" key="GridCell.Tab.0.right" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.1.bottom" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.1.center" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.1.center" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.1.left" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.1.left" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.1.right" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.1.right" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.2.bottom" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom" timestamp="1601712770150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.2.center" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770150" />
+    <state width="1741" height="300" key="GridCell.Tab.2.center" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.2.left" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.2.left" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.2.right" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.2.right" timestamp="1601712770149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.3.bottom" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770149" />
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom" timestamp="1601712770150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.3.center" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770150" />
+    <state width="1741" height="300" key="GridCell.Tab.3.center" timestamp="1601712770150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.3.left" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770150" />
+    <state width="1741" height="300" key="GridCell.Tab.3.left" timestamp="1601712770150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
-    <state width="1741" height="300" key="GridCell.Tab.3.right" timestamp="1601711201832">
+    <state width="1741" height="300" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770150" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right" timestamp="1601712770150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="300" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711201832" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712770150" />
     <state width="1741" height="300" key="GridCell.Tab.4.bottom" timestamp="1601704234225">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -593,10 +651,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711193561" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1601711112856">
+    <state x="781" y="344" key="SettingsEditor" timestamp="1601712449733">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711112856" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712449733" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1601711645311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711645311" />
     <state x="1000" y="487" key="git4idea.merge.GitPullDialog" timestamp="1601649721514">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
