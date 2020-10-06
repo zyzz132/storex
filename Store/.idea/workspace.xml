@@ -30,22 +30,170 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/servlet/CommodityServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Commodity/Shopv.jsp" afterDir="false" />
+    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="222">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/Seckill_commodityK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/Seckill_timeK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/serice/BrandSerice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/lib/fastjson-1.2.13.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Collectimpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Seckill_commodityK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/Seckill_timeK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/WEB-INF/classes/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/artifacts/Store_war_exploded/WEB-INF/classes/web/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/production/Store/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/out/production/Store/web/Commodity/Commdoity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/130939160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/180497649.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/185605425.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/191088680.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/216074673.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/221864699.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/221930979.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/242527949.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/255190759.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/278308162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/290076651.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/348041961.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/355648941.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/360702715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/412612130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/458176487.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/509304024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/555317507.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/561215906.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/569951524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/595891830.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/596939217.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/60138409.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/633168933.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/650292913.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/671860200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/754664842.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/759019641.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/77697961.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/785775363.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/792379689.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/821191021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/83207611.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/892709789.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/902644669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/956473572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/973079698.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/976052449.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/upload/99968091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SeckillDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/Store.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Dao/SeckillDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1018#1027#0" expanded="true" />
+                <element signature="e#2416#2417#0" expanded="true" />
+                <element signature="e#2443#2444#0" expanded="true" />
+                <element signature="e#3016#3017#0" expanded="true" />
+                <element signature="e#3043#3044#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/admin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2310">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dao/BrandDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1560">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Brand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2370">
+              <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+              <folding>
+                <element signature="method#getcount#0;class#CommodiyDao#0" />
+                <element signature="method#getCommodiyID#0;class#CommodiyDao#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5760">
+              <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AddBrand#0;class#TopicServlet#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1770">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/tool/AddGood.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4080">
+              <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +207,8 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
@@ -70,6 +220,54 @@
   </component>
   <component name="ProjectId" id="1iLmuXLAo3FxsYUpkaGhYl0aEuC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,10 +277,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601387315676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601718155677" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="E:/file/programfile/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,10 +289,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -111,6 +309,18 @@
       <recent name="D:\storex\Store\web\images" />
       <recent name="D:\storex\Store\web\images\footer" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -448,13 +658,7 @@
       <workItem from="1601316985123" duration="128000" />
       <workItem from="1601695545280" duration="15866000" />
       <workItem from="1601711745491" duration="628000" />
-      <workItem from="1601712388760" duration="5297000" />
-      <workItem from="1601786238710" duration="9754000" />
-      <workItem from="1601820032734" duration="1235000" />
-      <workItem from="1601826458209" duration="778000" />
-      <workItem from="1601872098656" duration="15052000" />
-      <workItem from="1601914976474" duration="2141000" />
-      <workItem from="1601958802947" duration="705000" />
+      <workItem from="1601712388760" duration="424000" />
     </task>
     <task id="LOCAL-00001" summary="商品收藏">
       <created>1601646754644</created>
@@ -477,22 +681,83 @@
       <option name="project" value="LOCAL" />
       <updated>1601711641425</updated>
     </task>
-    <task id="LOCAL-00004" summary="重编译">
-      <created>1601712882890</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1601712882890</updated>
-    </task>
-    <task id="LOCAL-00005" summary="重编译2">
-      <created>1601713228278</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1601713228278</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="427000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="259" y="24" width="1499" height="1006" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13481584" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="设计器" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32912844" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32875144" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32912844" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32912844" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="调色板" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -503,6 +768,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -514,132 +785,196 @@
                   </entry>
                 </map>
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/store" />
+    </ignored-roots>
     <MESSAGE value="商品收藏" />
     <MESSAGE value="导航与尾部文件" />
     <MESSAGE value="重编译" />
-    <MESSAGE value="重编译2" />
-    <option name="LAST_COMMIT_MESSAGE" value="重编译2" />
+    <MESSAGE value="222" />
+    <option name="LAST_COMMIT_MESSAGE" value="222" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="274" key="#Project_Structure" timestamp="1601712590405">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712590405" />
-    <state x="1010" y="475" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1601877127210">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1010" y="475" key="#com.intellij.ide.util.PackageChooserDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601877127210" />
-    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601646667640">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601646667640" />
-    <state x="954" y="440" key="FileChooserDialogImpl" timestamp="1601712557661">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712557661" />
-    <state width="1741" height="224" key="GridCell.Tab.0.bottom" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.0.center" timestamp="1601893180391">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180391" />
-    <state width="1741" height="224" key="GridCell.Tab.0.left" timestamp="1601893180391">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180391" />
-    <state width="1741" height="224" key="GridCell.Tab.0.right" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.1.bottom" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.1.center" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.1.left" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.1.right" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.2.bottom" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.2.center" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.2.left" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.2.right" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.3.bottom" timestamp="1601893180393">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180393" />
-    <state width="1741" height="224" key="GridCell.Tab.3.center" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.3.left" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.3.right" timestamp="1601893180392">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180392" />
-    <state width="1741" height="224" key="GridCell.Tab.4.bottom" timestamp="1601893180393">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180393" />
-    <state width="1741" height="224" key="GridCell.Tab.4.center" timestamp="1601893180393">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180393" />
-    <state width="1741" height="224" key="GridCell.Tab.4.left" timestamp="1601893180393">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180393" />
-    <state width="1741" height="224" key="GridCell.Tab.4.right" timestamp="1601893180393">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="224" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601893180393" />
-    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1601711193561">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601711193561" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1601712449733">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601712449733" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1601713231026">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601713231026" />
-    <state x="1000" y="487" key="git4idea.merge.GitPullDialog" timestamp="1601649721514">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1000" y="487" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601649721514" />
+    <state x="760" y="274" key="#Project_Structure" />
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" />
+    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="954" y="440" key="FileChooserDialogImpl" />
+    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.center" />
+    <state width="1741" height="300" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.left" />
+    <state width="1741" height="300" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.right" />
+    <state width="1741" height="300" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.center" />
+    <state width="1741" height="300" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.left" />
+    <state width="1741" height="300" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.right" />
+    <state width="1741" height="300" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.center" />
+    <state width="1741" height="300" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.left" />
+    <state width="1741" height="300" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.right" />
+    <state width="1741" height="300" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.center" />
+    <state width="1741" height="300" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.left" />
+    <state width="1741" height="300" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.center" />
+    <state width="1741" height="300" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.left" />
+    <state width="1741" height="300" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.right" />
+    <state width="1741" height="300" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog" />
+    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="781" y="344" key="SettingsEditor" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="1000" y="487" key="git4idea.merge.GitPullDialog" />
+    <state x="1000" y="487" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/SeckillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1018#1027#0" expanded="true" />
+            <element signature="e#2416#2417#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Store:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (Store)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Store</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-8.0.21</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
