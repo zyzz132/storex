@@ -51,6 +51,8 @@ public class CollectDao extends BaseDao implements Collectimpl {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            closeALL(rs,ps,conn);
         }
 
         return list;

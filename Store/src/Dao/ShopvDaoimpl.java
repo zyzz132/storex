@@ -1,6 +1,7 @@
 package Dao;
 
 import Impl.ShopvDao;
+import Util.ShopvUtil;
 import entity.Commodity;
 import entity.shopv;
 
@@ -33,14 +34,15 @@ public class ShopvDaoimpl extends  BaseDao implements ShopvDao {
     }
 
 
-    public List<shopv> getshopvById(Commodity cd) {
+    public List<shopv> getshopvById(int id) {
         List<shopv> list= new ArrayList<shopv>();
-        Connection conn=null;
+        Connection conn=getConnection();
         PreparedStatement ps=null;
         ResultSet rs=null;
-        String sql="SELECT * FROM shopv WHERE ShopV_Id=?";
+        String sql="SELECT * FROM shopv WHERE User_id =?";
         try {
             ps=conn.prepareStatement(sql);
+            ps.setInt(1,id);
             rs=ps.executeQuery();
             while (rs.next()){
                 shopv s=new shopv();
@@ -48,6 +50,10 @@ public class ShopvDaoimpl extends  BaseDao implements ShopvDao {
                 s.setUser_id(rs.getInt("User_id"));
                 s.setCommType_id(rs.getInt("CommType_id"));
                 s.setCount(rs.getInt("Count"));
+                CommoidyTypeDao commtypeDao=new CommoidyTypeDao();
+                s.setCommtype(commtypeDao.getCommID_Type(s.getCommType_id()));
+                CommodiyDao commddao=new CommodiyDao();
+                s.setCommd(commddao.getID_Commodiy(s.getCommtype().getCommodity_Id()));
                 list.add(s);
             }
         } catch (SQLException e) {

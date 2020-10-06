@@ -43,6 +43,8 @@ public class CommClassDao extends BaseDao{
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
 		}
         
         return list;

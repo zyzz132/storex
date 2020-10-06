@@ -1,4 +1,7 @@
-<%--
+<%@ page import="Dao.ShopvDaoimpl" %>
+<%@ page import="entity.shopv" %>
+<%@ page import="java.util.List" %>
+<%@ page import="Util.ShopvUtil" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 2020/10/5
@@ -6,13 +9,25 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ include file="../Header.jsp" %>
+<%
+    ShopvDaoimpl shopvDao=new ShopvDaoimpl();
+    List<shopv> shopvList=shopvDao.getshopvById(1);
+    request.setAttribute("shopvs",shopvList);
+%>
+<script src="js/shopv.js"></script>
 <div class="shopv-section">
     <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
         <ul class="layui-tab-title">
             <li class="layui-this">全部商品</li>
 
         </ul>
+        <c:if test="${shopvs.size()<1}">
+
+
+        </c:if>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
                 <div>
@@ -27,86 +42,47 @@
                 </div>
                 <div class="shopv-Commds">
                     <ul>
-                        <li>
-                            <div class="Commd-checkbox">
-                                <input type="checkbox">
-                                <img src="../images/test1.jpg" alt="">
-                            </div>
-                            <div class="Commd-info">
-                                <div class="Commd-info-title"><a href="">商品名称</a></div>
-                                <div class="Commd-info-Class">商品型号</div>
-                            </div>
-                            <div class="Commd-price">
-                                <div class="Commd-info-market-price">￥<span>1232</span></div>
-                                <div class="Commd-info-selling-price">￥<span>1232</span></div>
-                            </div>
-                            <div class="tool Commd-count">
-                                <a href="javascript:" class="countbtn">-</a>
-                                <input type="text" value="1" class="count">
-                                <a href="javascript:" class="countbtn">+</a>
-                            </div>
-                            <div class="Commd-count-price"><p>￥<span>200.00</span></p></div>
-                            <div>
-                                <p><a href="javascipt:">加入收藏</a></p>
-                                <p><a href="javascipt:">删除</a></p>
+                        <c:forEach items="${shopvs}" var="s">
+                            <li>
+                                <div class="Commd-checkbox">
+                                    <input type="checkbox" class="chang">
+                                    <img src="images/test1.jpg" alt="">
+                                </div>
+                                <div class="Commd-info">
+                                    <div class="Commd-info-title"><a href="Commod?Commd_id=${s.commd.commodity_Id}"><c:out value="${s.commd.commodity_Name}"></c:out></a></div>
+                                    <div class="Commd-info-Class">${s.commtype.commType_Name}</div>
+                                </div>
+                                <div class="Commd-price">
+                                    <div class="Commd-info-market-price">￥<span>${s.commd.market_price}</span></div>
+                                    <c:if test="${s.commType_id>0}">
+                                        <div class="Commd-info-selling-price">￥<span>${s.commtype.commType_Price}</span></div>
+                                    </c:if>
+                                    <c:if test="${s.commType_id<1}">
+                                        <div class="Commd-info-selling-price">￥<span>${s.commd.selling_price}</span></div>
+                                    </c:if>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Commd-checkbox">
-                                <input type="checkbox">
-                                <img src="../images/test1.jpg" alt="">
-                            </div>
-                            <div class="Commd-info">
-                                <div class="Commd-info-title"><a href="">商品名称</a></div>
-                                <div class="Commd-info-Class">商品型号</div>
-                            </div>
-                            <div class="Commd-price">
-                                <div class="Commd-info-market-price">￥<span>1232</span></div>
-                                <div class="Commd-info-selling-price">￥<span>1232</span></div>
-                            </div>
-                            <div class="tool Commd-count">
-                                <a href="javascript:" class="countbtn">-</a>
-                                <input type="text" value="1" class="count">
-                                <a href="javascript:" class="countbtn">+</a>
-                            </div>
-                            <div class="Commd-count-price"><p>￥<span>200.00</span></p></div>
-                            <div>
-                                <p><a href="javascipt:">加入收藏</a></p>
-                                <p><a href="javascipt:">删除</a></p>
 
-                            </div>
-                        </li><li>
-                        <div class="Commd-checkbox">
-                            <input type="checkbox">
-                            <img src="../images/test1.jpg" alt="">
-                        </div>
-                        <div class="Commd-info">
-                            <div class="Commd-info-title"><a href="">商品名称</a></div>
-                            <div class="Commd-info-Class">商品型号</div>
-                        </div>
-                        <div class="Commd-price">
-                            <div class="Commd-info-market-price">￥<span>1232</span></div>
-                            <div class="Commd-info-selling-price">￥<span>1232</span></div>
-                        </div>
-                        <div class="tool Commd-count">
-                            <a href="javascript:" class="countbtn">-</a>
-                            <input type="text" value="1" class="count">
-                            <a href="javascript:" class="countbtn">+</a>
-                        </div>
-                        <div class="Commd-count-price"><p>￥<span>200.00</span></p></div>
-                        <div >
-                            <p><a href="javascipt:">加入收藏</a></p>
-                            <p><a href="javascipt:">删除</a></p>
+                                </div>
+                                <div class="tool Commd-count">
+                                    <a href="javascript:" class="countbtn  minusCount">-</a>
+                                    <input type="text" value="${s.count}" class="count">
+                                    <a href="javascript:" class="countbtn addCount">+</a>
+                                </div>
+                                <div class="Commd-count-price"><p>￥<span>200.00</span></p></div>
+                                <div >
+                                    <p><a href="javascipt:">加入收藏</a></p>
+                                    <p><a href="javascipt:" class="shopv-del">删除</a></p>
 
-                        </div>
-                    </li>
+                                </div>
+                            </li>
+                        </c:forEach>
                     </ul>
 
                 </div>
+
                 <div class="shopv-allC">
                     <ul>
-                        <li><input type="checkbox" >全选</li>
+                        <li><input type="checkbox" class="check-all">全选</li>
                         <li><a href="">删除</a></li>
                         <li><a href="">清除失效商品</a></li>
                         <li><a href="">加入收藏</a></li>
@@ -114,7 +90,7 @@
                     </ul>
                     <ul class="shopv-js">
                         <li>已选商品 <span>0</span>件</li>
-                        <li>合计: <span>0.0</span></li>
+                        <li>合计: <span class="aggregate">0.0</span></li>
                         <li><a href="">结算</a></li>
                     </ul>
                 </div>
@@ -165,7 +141,10 @@
             location.hash = 'test='+ $(this).attr('lay-id');
         });
 
+
+
     });
 </script>
+
 
 <%@ include file="../Footer.jsp" %>

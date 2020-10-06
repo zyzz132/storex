@@ -88,6 +88,34 @@ public class CommoidyTypeDao extends BaseDao{
 		}
 		return list;
 	}
+	//根据商品类型id获取商品规格
+	public CommodityType getCommID_Type(int CommType_Id){
+		String sql="SELECT * FROM commodity_type WHERE CommType_Id=?";
+		CommodityType commtype=new CommodityType();
+		Connection conn=getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		try {
+			ps=conn.prepareStatement(sql);
+			ps.setObject(1, CommType_Id);
+			rs=ps.executeQuery();
+			if(rs!=null){
+				while(rs.next()){
+					commtype.setCommType_Id(rs.getInt("CommType_Id"));
+					commtype.setCommodity_Id(rs.getInt("Commodity_Id"));
+					commtype.setCommType_Name(rs.getString("CommType_Name"));
+					commtype.setCommType_Price(rs.getDouble("CommType_Price"));
+					commtype.setCommType_Count(rs.getInt("CommType_Count"));
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			closeALL(rs,ps,conn);
+		}
+		return commtype;
+	}
 	//通过CommodityType实体类删除
 	public int DelCommType(int id){
 		String sql="DELETE FROM commodity_type WHERE CommType_Id=?";
@@ -101,6 +129,8 @@ public class CommoidyTypeDao extends BaseDao{
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			closeALL(ps,conn);
 		}
 		return num;
 	}

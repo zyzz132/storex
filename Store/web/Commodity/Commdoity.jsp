@@ -7,36 +7,42 @@
 --%>
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
 <%@ include file="../Header.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div class="Commod_info">
     <div class="Commod_images">
-        <div class="CommdImagK"><img src="../images/test1.jpg" alt=""></div>
+        <div class="CommdImagK"><img src="${requestScope.path}upload/${requestScope.commd.imageList.get(0).commImage_Url}" alt=""></div>
         <ul class="Commdimaglist">
-            <li><img src="../images/test1.jpg" alt=""></li>
-            <li><img src="../images/test1.jpg" alt=""></li>
-            <li><img src="../images/test1.jpg" alt=""></li>
+            <c:forEach items="${requestScope.commd.imageList}" var="Cimg">
+                <li><img src="${requestScope.path}upload/${Cimg.commImage_Url}" alt=""></li>
+            </c:forEach>
+
         </ul>
     </div>
     <%--商品信息--%>
     <div class="Commod_typeInfo">
-        <h2 class="Commod_title">商品名称</h2>
+        <h2 class="Commod_title">${requestScope.commd.commodity_Name}</h2>
 <%--        <p class="Commod_subname">商品副标题</p>--%>
         <div class="price">
-            <p class="original"><span>原价 </span><span>￥120.00</span></p>
+            <p class="original"><span>原价 </span><span>￥${requestScope.commd.market_price}</span></p>
             <p class="cuoshou"><span>秒杀价 </span><span>￥100.00</span></p>
-            <p class="cuoshou"><span>价格</span><span>￥100.00</span></p>
+            <p class="cuoshou"><span>价格</span><span>￥${requestScope.commd.selling_price}</span></p>
         </div>
         <div class="liouliang">
             <ul>
                 <li>累计销量 <span class="liouliang-value">0</span></li>
                 <li>浏览次数 <span class="liouliang-value">0</span></li>
                 <li>累计评论 <span class="liouliang-value">0</span></li>
-
             </ul>
         </div>
 
 
-        <div class="Commod_type">选择规格 <div class="guige">规格1</div><div class="guige">规格2</div></div>
+        <div class="Commod_type">选择规格
+            <c:forEach items="${requestScope.commd.commTypeList}" var="Ctype">
+                <div class="guige">${Ctype.commType_Name}</div>
+            </c:forEach>
+
+        </div>
         <div class="tool">数量
             <a href="javascript:" class="countbtn">-</a>
             <input type="text" value="1" class="count">
@@ -128,5 +134,5 @@
 
     });
 </script>
-
+<script src="js/Commodity.js"></script>
 <%@ include file="../Footer.jsp" %>

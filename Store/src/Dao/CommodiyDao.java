@@ -11,6 +11,8 @@ import entity.CommClass;
 import entity.Commodity;
 
 public class CommodiyDao extends BaseDao{
+	Connection conn=null;
+	PreparedStatement ps=null;
 	//添加商品信息
 	public int AddCommodity(Commodity commd){
 		String addCommoditySql="INSERT INTO commodity VALUES(NULL,?,?,NOW(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -35,7 +37,7 @@ public class CommodiyDao extends BaseDao{
 				commd.getGuarantee3());
 		if(num>=1){
 			String selectIDsql="SELECT Commodity_Id FROM commodity WHERE Commodity_name=? AND subname=? AND market_price=? AND unit=?";
-			ResultSet rs=executeQuery(selectIDsql, commd.getCommodity_Name(),
+			ResultSet rs=executeQuery(conn,ps,selectIDsql, commd.getCommodity_Name(),
 					commd.getSubname(),
 					commd.getMarket_price(),
 					commd.getUnit());
@@ -47,6 +49,8 @@ public class CommodiyDao extends BaseDao{
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			}finally {
+				closeALL(rs,ps,conn);
 			}
 			if(commd.getCommodity_Id()>0){//判断商品是否添加成功
 				//添加商品规格
@@ -182,4 +186,45 @@ public class CommodiyDao extends BaseDao{
  		}
          return commodity;
     }
+    //查询商品ID的信息
+	public Commodity getID_Commodiy(int Commodity_Id){
+		String sql="SELECT * FROM commodity WHERE Commodity_Id=?";
+		Connection conn =getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		Commodity commodity=null;
+		CommoidyTypeDao ctdao=new CommoidyTypeDao();
+		CommodityImageDao cimgdao=new CommodityImageDao();
+		try {
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1,Commodity_Id);
+			rs=ps.executeQuery();
+			while(rs.next()){
+				commodity=new Commodity();
+				commodity.setCommodity_Id(rs.getInt("Commodity_Id"));
+				commodity.setCommodity_Name(rs.getString("Commodity_name"));
+				commodity.setCommClass_Id(rs.getInt("CommClass_Id"));
+				commodity.setBrand_id(rs.getInt("brand_id"));
+				commodity.setCommodity_introduce(rs.getString("Commodity_introduce"));
+				commodity.setCommodity_No(rs.getString("Commodity_No"));
+				commodity.setMarket_price(rs.getDouble("market_price"));
+				commodity.setSelling_price(rs.getDouble("selling_price"));
+				commodity.setSort(rs.getInt("sort"));
+				commodity.setWeight(rs.getString("weight"));
+				commodity.setWarehousing(rs.getInt("warehousing"));
+				commodity.setUnit(rs.getString("unit"));
+				commodity.setSubname(rs.getString("subname"));
+				commodity.setTime(rs.getString("Time"));
+				commodity.setCommTypeList(ctdao.getCommID_Types(rs.getInt("Commodity_Id")));
+				commodity.setImageList(cimgdao.getCommodityImage(rs.getInt("Commodity_Id")));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
+		}
+		return commodity;
+	}
+
 }

@@ -8,6 +8,8 @@ public class shopv {
     private  int CommType_id;   //商品型号ID
 
     private  int Count;     //数量
+    private CommodityType Commtype=new CommodityType();
+    private Commodity Commd=new Commodity();
 
     public shopv() {
     }
@@ -55,5 +57,22 @@ public class shopv {
 
     public void setCount(int count) {
         Count = count;
+    }
+
+
+    public CommodityType getCommtype() {
+        return Commtype;
+    }
+
+    public void setCommtype(CommodityType commtype) {
+        Commtype = commtype;
+    }
+
+    public Commodity getCommd() {
+        return Commd;
+    }
+
+    public void setCommd(Commodity commd) {
+        Commd = commd;
     }
 }

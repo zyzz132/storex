@@ -70,7 +70,30 @@ public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seck
 
     //获取秒杀商品列表
     public List<Seckill_commodity> getSeckill_commodity() {
-        return null;
+        List<Seckill_commodity> list = new ArrayList<Seckill_commodity>();
+        Connection conn = getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM Seckill_commodity";
+        try {
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                Seckill_commodity sc = new Seckill_commodity();
+                sc.setId(rs.getInt("id"));
+                sc.setSeckill_Time_id(rs.getInt("seckill_Time_id"));
+                sc.setCommodity_id(rs.getInt("commodity_id"));
+                sc.setSeckill_Price(rs.getDouble("seckill_Price"));
+                sc.setSeckill_Count(rs.getInt("seckill_Count"));
+                sc.setXg_Count(rs.getInt("xg_Count"));
+                list.add(sc);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(conn,ps,rs);
+        }
+        return list;
     }
 
     //增加秒杀时间段
@@ -89,6 +112,28 @@ public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seck
 
     //获取秒杀时间段列表
     public List<Seckill_time> getSeckill_times() {
-        return null;
+        List<Seckill_time> list = new ArrayList<Seckill_time>();
+        Connection conn = getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM Seckill_time";
+        try {
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                Seckill_time st = new Seckill_time();
+                st.setId(rs.getInt("id"));
+                st.setName(rs.getString("Name"));
+                st.setOpenTime(rs.getTime("OpenTime"));
+                st.setStopTime(rs.getTime("StopTime"));
+                st.setIsOpen(rs.getInt("isOpen"));
+                list.add(st);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(conn,ps,rs);
+        }
+        return list;
     }
 }

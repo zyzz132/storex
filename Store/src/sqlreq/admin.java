@@ -120,10 +120,12 @@ public class admin  extends user implements CommodityTool, brandDao {
     public List<Commodity> getCommoditys(){
         List<Commodity> list= new ArrayList<Commodity>();
         Connection conn=bd.getConnection();
+        PreparedStatement ps=null;
+        ResultSet rs=null;
         String sql="SELECT * FROM commodity";
         try {
-            PreparedStatement ps=conn.prepareStatement(sql);
-            ResultSet rs=ps.executeQuery();
+            ps=conn.prepareStatement(sql);
+            rs=ps.executeQuery();
             if(rs!=null){
                 while(rs.next()){
                     Commodity commd=new Commodity();
@@ -146,7 +148,7 @@ public class admin  extends user implements CommodityTool, brandDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            bd.closeALL();
+            bd.closeALL(rs,ps,conn);
         }
         return list;
     }

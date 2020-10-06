@@ -1,5 +1,7 @@
 package Dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -8,6 +10,8 @@ import java.util.List;
 import entity.Brand;
 
 public class BrandDao extends BaseDao{
+	Connection conn=null;
+	PreparedStatement ps=null;
 	//获取品牌总数量
 	public int getBrandCount(){
 		ResultSet rs=null;
@@ -15,14 +19,14 @@ public class BrandDao extends BaseDao{
 		int count= -1;
 		
 		try {
-			rs=this.executeQuery(sql, null);
+			rs=this.executeQuery(conn,ps,sql, null);
 			rs.next();
 			count=rs.getInt(1);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
-			closeALL(rs);
+			closeALL(rs,ps,conn);
 		}
 		
 		return count;
@@ -45,10 +49,9 @@ public class BrandDao extends BaseDao{
 			currPageNo=(currPageNo-1)*numsPerPage;
 		}
 		if(brand_name !=null && !brand_name.equals("")){
-			System.out.println(brand_name);
-			rs = this.executeQuery(sql, brand_name,currPageNo,numsPerPage);
+			rs = this.executeQuery(conn,ps,sql, brand_name,currPageNo,numsPerPage);
 		}else{
-			rs = this.executeQuery(sql, currPageNo,numsPerPage);
+			rs = this.executeQuery(conn,ps,sql, currPageNo,numsPerPage);
 		}
 
 		try {
@@ -65,6 +68,8 @@ public class BrandDao extends BaseDao{
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
 		}
 		return brands;
 	}
@@ -75,15 +80,17 @@ public class BrandDao extends BaseDao{
 		int num=-1;
 		if(brand_name!=null){
 			sql+="WHERE brand_name=?";
-			rs=this.executeQuery(sql,brand_name);
+			rs=this.executeQuery(conn,ps,sql,brand_name);
 		}else{
-			rs=this.executeQuery(sql);
+			rs=this.executeQuery(conn,ps,sql);
 		}
 		try {
 			rs.next();
 			num=rs.getInt(1);
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
 		}
 		return num;
 	}
@@ -92,7 +99,7 @@ public class BrandDao extends BaseDao{
 		List<Brand> list=new ArrayList<Brand>();
 		ResultSet rs=null;
 		String sql="select * FROM brand";
-		rs=executeQuery(sql);
+		rs=executeQuery(conn,ps,sql);
 		try {
 			while(rs.next()){
 				Brand br=new Brand();
@@ -106,6 +113,8 @@ public class BrandDao extends BaseDao{
 			}
 		} catch (SQLException throwables) {
 			throwables.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
 		}
 		return list;
 	}

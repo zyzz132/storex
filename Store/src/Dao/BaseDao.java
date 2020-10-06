@@ -63,10 +63,8 @@ public class BaseDao {
             e.printStackTrace();
         }
     }
-    protected ResultSet executeQuery(String sql, Object... params) {
-    	Connection conn=null;
+    protected ResultSet executeQuery(Connection conn,PreparedStatement pstmt,String sql, Object... params) {
         conn = this.getConnection();
-        PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
             pstmt = conn.prepareStatement(sql);

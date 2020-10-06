@@ -7,12 +7,12 @@
 <head>
 
 <title>Insert title here</title>
-
+	<script src="${path}layui/layui.js" charset="utf-8"></script>
 	<script src="${path}js/jquery-1.12.2.js"></script>
 	<script src="${path}js/head.js"></script>
 	<link rel="stylesheet" href="${path}layui/css/layui.css">
 	<link rel="stylesheet" href="${path}css/style.css">
-	<script src="${path}layui/layui.js"></script>
+
 </head>
 <body>
 <div class="head">
