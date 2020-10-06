@@ -5,7 +5,7 @@ body{}
 #login_diy{width: 1250px;margin: 0 auto;}
 .head>.top_1{width: 100%;background: #E3E4E5;height: 30px;margin: 0;}
 .head>.top_1>.nav_top>ul>li{display:inline-block;margin: 0 10px;font-size: 13px;}
-
+.Commod-dtls,.shopv-section{width: 1200px;margin: 0 auto}
 
 /*导航*/
 .nav_top{width: 1200px;margin: 0 auto;position: relative;}
@@ -15,12 +15,12 @@ body{}
 
 /*分类-导航*/
 .nav{border-bottom: 3px solid #D2364C}
-.nav>.navT{width: 1200px;margin: 0 auto;overflow: hidden}
+.nav>.navT{width: 1200px;margin: 0 auto;}
 .nav>.navT>.allClass,.nav>.navT>ul,.nav>.navT>ul>li{display: inline-block;vertical-align: top}
 .nav>.navT>.allClass{background-color: #d2364c;color: white;position: relative;line-height: 40px;width: 180px;text-align: center;font-size: 16px}
 .nav>.navT>.allClass>.CommdClassList{position: absolute;display: none;z-index: 2;width: 100%;background-color: #3F3F3F}
 
-.nav>.navT>ul{width: 1000px;margin-left: 0px;font-weight: 600;}
+.nav>.navT>ul{width: 1000px;margin-left: 0px;font-weight: 600;overflow: hidden;}
 .nav>.navT>ul>li{padding: 10px 20px ;position: relative;}
 .nav>.navT>ul>li>a:hover,.nav>.navT>ul>.index-nav>a{color: #d2364c;}
 .nav>.navT>ul>li>a:hover:after{opacity: 1}
@@ -53,24 +53,67 @@ body{}
 .Commod_info{width: 1200px;margin: 0 auto}
 .Commod_info>div{margin-top: 10px;display: inline-block;vertical-align: top}
 .Commod_info>.Commod_images{width: 398px;background-color: #01AAED}
-.Commod_info>.Commod_typeInfo{width: 600px;height: 400px;margin-left: 20px}
+.Commod_info>.Commod_typeInfo{width: 778px;height: 400px;margin-left: 20px}
 .Commod_info>.tuijian{width: 220px;height: 400px;background-color: #01AAED}
+.Commod_info>.Commod_typeInfo.Commod_title{margin: 10px 0 }
 .Commod_info>.Commod_typeInfo>p{padding: 10px 5px;}
-.Commod_info>.Commod_typeInfo>.price{background-color: #ddd}
+.Commod_info>.Commod_typeInfo>.price{background: url("../images/goods-meta-bg.png") no-repeat;background-size:cover;padding: 10px}
+.Commod_info>.Commod_typeInfo>.price>p{padding: 5px 0px}
+.Commod_info>.Commod_typeInfo>.price>.original>span:last-child{text-decoration: line-through;font-size: 14px;color: #999;}
+.Commod_info>.Commod_typeInfo>.price>.cuoshou>span:last-child{    font-size: 24px;font-weight: bold;line-height: 16px;color: red}
+.Commod_info>.Commod_typeInfo>.price>p>span:first-child{;color:#666;width: 60px;display: inline-block}
 .Commod_info>.Commod_typeInfo>.price>span{color:#FD482C;font-size: 22px;padding-right: 20px;}
 .Commod_info>.Commod_typeInfo>.adress{border-bottom: 1px solid #b3b3b3}
 .Commod_info>.Commod_typeInfo>.Commod_type{margin-top: 10px;margin-bottom: 30px}
 .Commod_info>.Commod_typeInfo>.Commod_type>.guige{margin-right: 10px;padding: 5px;border:1px solid #ddd;display: inline-block;}
-.Commod_info>.tool>.AddStorev{background-color: #FD482C;padding: 5px 10px}
-.Commod_info>.Commod_typeInfo>.tool>.count{width: 50px;height: 40px;text-align: center;margin-right: -5px;margin-left: -5px;}
-.Commod_info>.Commod_typeInfo>.tool>.countbtn{
-    border: 1px solid #0C0C0C;display: inline-block;line-height: 42px;width: 10px;padding-left: 5px ;padding-right: 5px}
-.Commod_info>.Commod_typeInfo>.tool>.AddStorev{line-height: 42px;background: red;display: inline-block;padding: 0 10px;color: wheat;font-size: 16px;}
+.Commod_info .AddStorev{background-color: #FD482C;padding: 5px 10px}
+.tool>.count{border: 1px solid #ccc;width: 50px;height: 20px;text-align: center;margin-right: -5px;margin-left: -5px;}
+.tool>.countbtn{
+    background-color: #eeeeee;border: 1px solid #ccc;display: inline-block;line-height: 20px;width: 10px;padding-left: 5px ;padding-right: 5px}
+.tool{margin-bottom: 20px}
+.Commod_info>.Commod_typeInfo .AddStorev{line-height: 35px;background: #D2364C;display: inline-block;padding: 0 10px;color: wheat;font-size: 16px;width: 98px;text-align: center;color: white}
 .Commod_info>.Commod_images>.CommdImagK{width: 100%;height: 398px;}
 .Commod_info>.Commod_images>.CommdImagK>img{max-height: 100%;max-width: 100%;}
 .Commod_info>.Commod_images>.Commdimaglist{height: 72px;padding: 5px;background-color: #f9f9f9;border:1px solid #ddd}
 .Commod_info>.Commod_images>.Commdimaglist>li{display: inline-block;width: 70px;height: 100%}
 .Commod_info>.Commod_images>.Commdimaglist>li>img{max-width: 100%;max-height: 100%}
+.Commod_info>.Commod_typeInfo>.liouliang{border-bottom: 1px solid #ddd}
+.Commod_info>.Commod_typeInfo>.liouliang>ul>li:first-child{border-left:0px}
+.Commod_info>.Commod_typeInfo>.liouliang>ul>li{border-left: 1px solid #E5DFDA;;width: 32%;display: inline-block;text-align: center;margin: 10px 0px}
+.Commod_info>.Commod_typeInfo>.liouliang>ul>li>.liouliang-value{color: #D2364C;font-weight: 700}
+.buy-Storev{height: 35px}
+.buy{display: inline-block;border: 1px solid #D2364C;height: 100%;line-height: 35px;width: 98px;text-align: center;box-sizing: border-box;color: #D2364C;background-color:#FFEDED }
+
+.Commod-dtls>.left-rcmd{width: 20%;display: inline-block;margin: 10px 0px}
+.Commod-dtls>.Commod-dtl-comment{width: 78%;display: inline-block;margin-left: 20px;}
+.Commod-dtls>.Commod-dtl-comment .layui-tab-title{border-bottom: 1px solid #D2364C}
+.Commod-dtls>.Commod-dtl-comment .layui-this{background-color: #D2364C;color: white;border-bottom: 1px solid #D2364C}
+
+
+
+/*-------------------Shopv购物车文件---------------------*/
+.table-title{padding:10px 10px;}
+.table-title>li{display: inline-block;}
+.Commd-checkbox{width: 120px}.Commd-info{width: 500px}  .Commd-price{width: 130px}  .Commd-count{width: 120px}
+.Commd-count-price{width: 140px}  .operation{width: 130px}
+.shopv-Commds{border: 1px solid #ccc;background-color: #fcfcfc}
+.shopv-Commds li{padding: 20px 10px;border-bottom: 1px solid #ccc}
+.shopv-Commds li img{height: 80px}
+.shopv-Commds li>div{display: inline-block;vertical-align: top}
+.Commd-info>.Commd-info-title{width: 50%;display: inline-block}
+.Commd-info-Class{color: #9c9c9c;text-overflow: ellipsis;display: inline-block;width: 48%}
+.Commd-info-market-price{text-decoration: line-through;color: #9c9c9c;text-overflow: ellipsis;}
+.Commd-count-price>p{color: red}
+.shopv-allC{margin: 20px 0px;background-color: #fcfcfc;border: 1px solid #ccc;padding: 20px 5px}
+.shopv-allC>ul{display: inline-block}
+.shopv-allC>ul:last-child{float:right}
+.shopv-allC>ul>li{display: inline-block;padding: 0 20px}
+.shopv-js span{color: red;font-size: 18px;font-weight: 600}
+
+
+
+
+
 
 
 /*-------------------Footer尾部文件---------------------*/
