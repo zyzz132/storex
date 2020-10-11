@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="../layui/css/layui.css">
     <script src="../js/jquery-1.12.2.js" type="text/javascript"></script>
     <script src="js/admin.js" type="text/javascript"></script>
+    <style>
+        .layui-tab-content{
+            padding: 0px;
+        }
+        .layui-layout-admin .layui-body{bottom: 0px}
+        .layui-tab-content{height: calc(100% - 61px);}
+    </style>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -71,9 +78,9 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">所有商品</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="Commclassl.jsp"  target="myiframe">商品分类</a></dd>
-                        <dd><a href="GoodsList.jsp" target="myiframe">商品管理</a></dd>
-                        <dd><a href="BrandList.jsp" target="myiframe">品牌管理</a></dd>
+                        <dd><a  href="#" class="site-demo-active" data-id="" data-type="CommclassList" >商品分类</a></dd>
+                        <dd><a href="#" class="site-demo-active" data-type="GoodsList">商品管理</a></dd>
+                        <dd><a href="#" class="site-demo-active" data-type="BrandList">品牌管理</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -88,7 +95,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">营销</a>
                     <dl class="layui-nav-child">
-                        <dd><a href=""  target="myiframe">秒杀活动列表</a></dd>
+                        <dd><a href="#" class="site-demo-active" data-type="SskillList">秒杀活动列表</a></dd>
                         <dd><a href=""  target="myiframe">优惠券列表</a></dd>
                         <dd><a href=""  target="myiframe">品牌推荐</a></dd>
                         <dd><a href=""  target="myiframe">新品推荐</a></dd>
@@ -107,14 +114,92 @@
     </div>
 
     <div class="layui-body">
-        <iframe src="" frameborder="0" name="myiframe" width="100%" height="100%"></iframe>
+        <div class="layui-tab" lay-filter="demo" lay-allowclose="true">
+            <ul class="layui-tab-title">
+                <li class="layui-this" lay-id="11">控制台</li>
+
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">内容1</div>
+
+            </div>
+        </div>
     </div>
 </div>
 <script src="../layui/layui.js"></script>
+
 <script>
-    //JavaScript代码区域
     layui.use('element', function(){
-        var element = layui.element;
+        var $ = layui.jquery
+            ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+        //触发事件
+        var active = {
+            tabAdd: function(){
+                //新增一个Tab项
+                element.tabAdd('demo', {
+                    title: '新选项'+ (Math.random()*1000|0) //用于演示
+                    ,content: '内容'+ (Math.random()*1000|0)
+                    ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+                })
+            },
+            CommclassList:function () {
+                var id= new Date().getTime();
+                element.tabAdd('demo',{
+                    title: '商品分类' //用于演示
+                    ,content: '<iframe src="Commclassl.jsp" frameborder="0" width="100%" height="100%"></iframe>'
+                    ,id: id//实际使用一般是规定好的id，这里以时间戳模拟下
+                });
+                element.tabChange('demo', id);
+            },
+            GoodsList:function () {
+                var id= new Date().getTime();
+                element.tabAdd('demo',{
+                    title: '商品管理' //用于演示
+                    ,content: '<iframe src="GoodsList.jsp" frameborder="0" width="100%" height="100%"></iframe>'
+                    ,id: id //实际使用一般是规定好的id，这里以时间戳模拟下
+                });
+                element.tabChange('demo', id);
+            },
+            BrandList:function () {
+                var id= new Date().getTime();
+                element.tabAdd('demo',{
+                    title: '商品分类' //用于演示
+                    ,content: '<iframe src="BrandList.jsp" frameborder="0" width="100%" height="100%"></iframe>'
+                    ,id: id //实际使用一般是规定好的id，这里以时间戳模拟下
+                });
+                element.tabChange('demo', id);
+            },
+            SskillList:function () {
+                var id= new Date().getTime();
+                element.tabAdd('demo',{
+                    title: '秒杀管理' //用于演示
+                    ,content: '<iframe src="list/SekillList.jsp" frameborder="0" width="100%" height="100%"></iframe>'
+                    ,id: id //实际使用一般是规定好的id，这里以时间戳模拟下
+                });
+                element.tabChange('demo', id);
+            }
+            ,tabDelete: function(othis){
+                //删除指定Tab项
+                element.tabDelete('demo', '44'); //删除：“商品管理”
+
+
+                othis.addClass('layui-btn-disabled');
+            }
+        };
+
+        $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+
+        //Hash地址的定位
+        var layid = location.hash.replace(/^#test=/, '');
+        element.tabChange('test', layid);
+
+        element.on('tab(test)', function(elem){
+            location.hash = 'test='+ $(this).attr('lay-id');
+        });
 
     });
 </script>

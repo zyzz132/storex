@@ -30,82 +30,265 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="10-6">
-      <change afterPath="$PROJECT_DIR$/src/Util/ShopvUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/servlet/ShopvServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/Commodity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/shopv.js" afterDir="false" />
+    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="重编译">
+      <change afterPath="$PROJECT_DIR$/src/Dao/DiscountsDaol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dao/Discounts_CommdDaol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dao/Discounts_recordDaol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dao/commodity_pxDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impl/Discounts_Commdimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impl/Discounts_recordimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impl/Discountsimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impl/commodity_pximpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Discounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Discounts_Commd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Discounts_record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/commodity_px.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/CommdFileServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/list/SekillList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/list/SekillTime.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/text/Sekill.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Shopv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Shopv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CollectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CollectDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommClassDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommodiyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommodiyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommoidyTypeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommoidyTypeDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/ShopvDaoimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/ShopvDaoimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/ShopvDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/ShopvDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/BrandList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/shopv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/shopv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/CommodityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/CommodityServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/BrandList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/BrandList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Commodity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_commodity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/TopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/TopicServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/mysqlConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/mysqlConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/GoodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/GoodsList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddCommodity_attr.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddCommodity_attr.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/BrandDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/BrandDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/CollectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CollectDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/CommClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommClassDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/slideshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/slideshow.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/CommodiyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommodiyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/CommoidyTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommoidyTypeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SeckillDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ShopvDaoimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ShopvDaoimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Impl/ShopvDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/ShopvDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/BrandList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/shopv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/shopv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/servlet/CommodityServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/servlet/CommodityServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impl/SeckillK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/SeckillK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Commodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Seckill_commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Seckill_commodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Seckill_time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Seckill_time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlreq/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sqlreq/admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlreq/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/user.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Commodity/Shopv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Shopv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BrandDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BrandDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CollectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CollectDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommClassDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommodiyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommodiyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommoidyTypeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommoidyTypeDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/SeckillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/SeckillDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/ShopvDaoimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/ShopvDaoimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/ShopvDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/ShopvDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/BrandList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/shopv.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/shopv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/CommodityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/CommodityServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/SeckillK.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Commodity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_commodity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_time.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/TopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/TopicServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/UserInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/BrandList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/BrandList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/mysqlConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/mysqlConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/GoodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/GoodsList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/slideshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/slideshow.jsp" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
+    <ignored path="D:\Store\storex\Store\.idea\shelf/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.63702804">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="702">
+                  <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1092">
+                  <caret line="154" column="3" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="3" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#doPost#0;class#TopicServlet#0" />
+                    <element signature="method#login#0;class#TopicServlet#0" />
+                    <element signature="method#exit#0;class#TopicServlet#0" />
+                    <element signature="method#register#0;class#TopicServlet#0" />
+                    <element signature="method#AddCommClass#0;class#TopicServlet#0" />
+                    <element signature="method#DelCommClass#0;class#TopicServlet#0" />
+                    <element signature="method#getCommoditys#0;class#TopicServlet#0" />
+                    <element signature="method#AddCommodity#0;class#TopicServlet#0" />
+                    <element signature="method#AddBrand#0;class#TopicServlet#0" />
+                    <element signature="method#AddCommodiyType#0;class#TopicServlet#0" />
+                    <element signature="method#SelectCommType#0;class#TopicServlet#0" />
+                    <element signature="method#delCommodiyType#0;class#TopicServlet#0" />
+                    <element signature="method#getCommClass#0;class#TopicServlet#0" />
+                    <element signature="method#submitCommd#0;class#TopicServlet#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="702">
+                  <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Dao/DiscountsDaol.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1664">
+                  <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Dao/commodity_pxDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="988">
+                  <caret line="46" column="57" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="57" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Impl/commodity_pximpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="338">
+                  <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5824">
+                  <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="191">
+                  <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
         <option value="CSS File" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>upload(){</find>
+      <find>UploadAdapter</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sqlreq/user.java" />
+        <option value="$PROJECT_DIR$/src/sqlreq/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/sqlreq/admin.java" />
+        <option value="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" />
+        <option value="$PROJECT_DIR$/web/admin/ckeditor/index.html" />
+        <option value="$PROJECT_DIR$/web/Commodity/Shopv.jsp" />
+        <option value="$PROJECT_DIR$/web/nav.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/css/style.css" />
+        <option value="$PROJECT_DIR$/web/slideshow.jsp" />
+        <option value="$PROJECT_DIR$/web/text/Sekill.jsp" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/admin/admin.jsp" />
+        <option value="$PROJECT_DIR$/web/Footer.jsp" />
+        <option value="$PROJECT_DIR$/src/entity/Seckill_commodity.java" />
+        <option value="$PROJECT_DIR$/src/Impl/SeckillK.java" />
+        <option value="$PROJECT_DIR$/src/entity/Seckill_time.java" />
+        <option value="$PROJECT_DIR$/src/Dao/SeckillDao.java" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java" />
+        <option value="$PROJECT_DIR$/web/admin/list/SekillList.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/list/SekillTime.jsp" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/CommdFileServlet.java" />
+        <option value="$PROJECT_DIR$/web/admin/GoodsList.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" />
+        <option value="$PROJECT_DIR$/src/Dao/DiscountsDaol.java" />
+        <option value="$PROJECT_DIR$/src/entity/Commodity.java" />
+        <option value="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/servlet/CommodityServlet.java" />
+        <option value="$PROJECT_DIR$/src/Dao/commodity_pxDao.java" />
+        <option value="$PROJECT_DIR$/src/Impl/commodity_pximpl.java" />
+        <option value="$PROJECT_DIR$/src/Dao/CommodiyDao.java" />
+        <option value="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -114,8 +297,88 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="212" />
+    <option name="y" value="8" />
+    <option name="width" value="1370" />
+    <option name="height" value="1056" />
+  </component>
   <component name="ProjectId" id="1iLmuXLAo3FxsYUpkaGhYl0aEuC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="adminServlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Commodity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,10 +388,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601718155677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602428982925" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="E:/file/programfile/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,26 +400,38 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Store\storex\Store\src\Dao" />
+      <recent name="D:\Store\storex\Store\src\Impl" />
+      <recent name="D:\Store\storex\Store\src\entity" />
       <recent name="D:\storex\Store\src\entity" />
       <recent name="D:\storex\Store\src\Impl" />
-      <recent name="D:\Store\storex\Store\web\Commodity" />
-      <recent name="D:\Store\web\admin" />
-      <recent name="D:\Store\web\WEB-INF\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Store\storex\Store\src\entity" />
+      <recent name="D:\Store\storex\Store\src\Impl" />
       <recent name="D:\storex\Store\web\WEB-INF\lib" />
       <recent name="D:\storex\Store\src\serice" />
       <recent name="D:\storex\Store\out\artifacts\Store_war_exploded\images" />
-      <recent name="D:\storex\Store\web\images" />
-      <recent name="D:\storex\Store\web\images\footer" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -495,6 +770,17 @@
       <workItem from="1601695545280" duration="15866000" />
       <workItem from="1601711745491" duration="628000" />
       <workItem from="1601712388760" duration="424000" />
+      <workItem from="1601719536304" duration="55000" />
+      <workItem from="1601719613041" duration="14000" />
+      <workItem from="1602079273588" duration="599000" />
+      <workItem from="1602079898795" duration="679000" />
+      <workItem from="1602155911416" duration="12983000" />
+      <workItem from="1602221257641" duration="17202000" />
+      <workItem from="1602288380671" duration="10705000" />
+      <workItem from="1602307758772" duration="7088000" />
+      <workItem from="1602326887505" duration="16173000" />
+      <workItem from="1602392745959" duration="10205000" />
+      <workItem from="1602425223664" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="商品收藏">
       <created>1601646754644</created>
@@ -517,18 +803,105 @@
       <option name="project" value="LOCAL" />
       <updated>1601711641425</updated>
     </task>
-    <task id="LOCAL-00004" summary="10-6">
-      <created>1601964712633</created>
+    <task id="LOCAL-00004" summary="重编译">
+      <created>1602158002804</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1601964712633</updated>
+      <updated>1602158002804</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="80053000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72162163" visible="true" weight="0.12739871" />
+      <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.27837837" side_tool="true" visible="true" weight="0.12739871" />
+      <window_info id="设计器" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19739696" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32212582" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23101953" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.34273317" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3253796" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="调色板" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7256757" visible="true" weight="0.123667374" />
+      <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.27432433" side_tool="true" weight="0.13965885" />
+      <window_info id="设计器" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19739696" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32212582" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23101953" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.34273317" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3253796" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="调色板" order="9" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -536,6 +909,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -546,6 +925,14 @@
                     </value>
                   </entry>
                 </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
               </option>
             </State>
           </value>
@@ -566,223 +953,459 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/store" />
-    </ignored-roots>
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="商品收藏" />
     <MESSAGE value="导航与尾部文件" />
     <MESSAGE value="重编译" />
-    <MESSAGE value="222" />
-    <MESSAGE value="10-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="10-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="重编译" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="274" key="#Project_Structure" timestamp="1601964680436" />
-    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601983495193">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601983495193" />
-    <state x="1085" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1601969717106">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1085" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601969717106" />
-    <state x="1010" y="475" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1601965823508">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1010" y="475" key="#com.intellij.ide.util.PackageChooserDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601965823508" />
-    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601964680436" />
-    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="954" y="440" key="FileChooserDialogImpl" timestamp="1601964680436" />
-    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state width="1741" height="659" key="GridCell.Tab.0.bottom" timestamp="1602007249108">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249108" />
-    <state width="1741" height="659" key="GridCell.Tab.0.center" timestamp="1602007249108">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249108" />
-    <state width="1741" height="659" key="GridCell.Tab.0.left" timestamp="1602007249108">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249108" />
-    <state width="1741" height="659" key="GridCell.Tab.0.right" timestamp="1602007249108">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249108" />
-    <state width="1741" height="659" key="GridCell.Tab.1.bottom" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.1.center" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.1.left" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.1.right" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.2.bottom" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.2.center" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.2.left" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.2.right" timestamp="1602007249017">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249017" />
-    <state width="1741" height="659" key="GridCell.Tab.3.bottom" timestamp="1602007249018">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249018" />
-    <state width="1741" height="659" key="GridCell.Tab.3.center" timestamp="1602007249018">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249018" />
-    <state width="1741" height="659" key="GridCell.Tab.3.left" timestamp="1602007249018">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249018" />
-    <state width="1741" height="659" key="GridCell.Tab.3.right" timestamp="1602007249018">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602007249018" />
-    <state width="1741" height="659" key="GridCell.Tab.4.bottom" timestamp="1602006141302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602006141302" />
-    <state width="1741" height="659" key="GridCell.Tab.4.center" timestamp="1602006141302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602006141302" />
-    <state width="1741" height="659" key="GridCell.Tab.4.left" timestamp="1602006141302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602006141302" />
-    <state width="1741" height="659" key="GridCell.Tab.4.right" timestamp="1602006141302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1741" height="659" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602006141302" />
-    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1601964680436" />
-    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1601964680436" />
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1601964680436" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="1073" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601965170840">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1073" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601965170840" />
-    <state x="2710" y="291" width="1525" height="1127" maximized="true" key="dock-window-1" timestamp="1601991151175">
-      <screen x="2560" y="247" width="1920" height="1040" />
-    </state>
-    <state x="2710" y="291" width="1525" height="1127" maximized="true" key="dock-window-1/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601991151175" />
-    <state x="1010" y="448" key="extract.method.dialog" timestamp="1601970350812">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1010" y="448" key="extract.method.dialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601970350812" />
-    <state x="1000" y="487" key="git4idea.merge.GitPullDialog" timestamp="1601964680436" />
-    <state x="1000" y="487" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601964680436" />
-    <state x="3176" y="364" key="run.anything.popup" timestamp="1602003593447">
-      <screen x="2560" y="247" width="1920" height="1040" />
-    </state>
-    <state x="3176" y="364" key="run.anything.popup/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1602003593447" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1601979192105">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" timestamp="1601979192105" />
+    <state x="760" y="274" key="#Project_Structure" />
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" />
+    <state x="764" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="954" y="440" key="FileChooserDialogImpl" />
+    <state x="954" y="440" key="FileChooserDialogImpl/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.center" />
+    <state width="1741" height="300" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.left" />
+    <state width="1741" height="300" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.0.right" />
+    <state width="1741" height="300" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.center" />
+    <state width="1741" height="300" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.left" />
+    <state width="1741" height="300" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.1.right" />
+    <state width="1741" height="300" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.center" />
+    <state width="1741" height="300" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.left" />
+    <state width="1741" height="300" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.2.right" />
+    <state width="1741" height="300" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.center" />
+    <state width="1741" height="300" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.left" />
+    <state width="1741" height="300" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right" />
+    <state width="1741" height="300" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.bottom" />
+    <state width="1741" height="300" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.center" />
+    <state width="1741" height="300" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.left" />
+    <state width="1741" height="300" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state width="1741" height="300" key="GridCell.Tab.4.right" />
+    <state width="1741" height="300" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog" />
+    <state x="1165" y="566" width="425" height="267" key="MultipleFileMergeDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="781" y="344" key="SettingsEditor" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
+    <state x="1000" y="487" key="git4idea.merge.GitPullDialog" />
+    <state x="1000" y="487" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Store:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (Store)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Store</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>mysql-connector-java-8.0.21</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" selection-start-line="24" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/sample/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/sample/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/sekill.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mysql.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/servlet/FileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="157" column="89" lean-forward="true" selection-start-line="157" selection-start-column="89" selection-end-line="157" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/slideshow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/text/Sekill.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/Commclassl.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1014" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/BrandList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="130" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/CommodiyList.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Impl/SeckillK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Impl/Seckill_timeK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Impl/Seckill_commodityK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Seckill_commodity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="4" column="666767" selection-start-line="4" selection-start-column="666754" selection-end-line="4" selection-end-column="666767" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/de.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/eu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/zh-cn.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/CommdFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="81" column="63" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/list/SekillList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1898">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="79" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/SeckillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
+          <folding>
+            <element signature="method#AddSeckill#0;class#SeckillDao#0" />
+            <element signature="method#delSeckill#0;class#SeckillDao#0" />
+            <element signature="method#getSeckills#0;class#SeckillDao#0" />
+            <element signature="method#getSeckillsCount#0;class#SeckillDao#0" />
+            <element signature="method#delSeckill_commodity#0;class#SeckillDao#0" />
+            <element signature="method#getSeckill_commodity#0;class#SeckillDao#0" />
+            <element signature="method#delSeckill_time#0;class#SeckillDao#0" />
+            <element signature="method#getSeckill_times#0;class#SeckillDao#0" />
+            <element signature="method#getSeckill_Count#0;class#SeckillDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Seckill_time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/list/SekillTime.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="71" column="62" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Commodity/Shopv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="56" column="91" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/GoodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" />
+            <element signature="e#5156#5624#0#HTML" />
+            <element signature="e#5775#7006#0#HTML" />
+            <element signature="e#7034#7066#0#HTML" />
+            <element signature="e#7095#7131#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/Discounts_CommdDaol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/servlet/CommodityServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/commodity_px.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="154" column="3" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doPost#0;class#TopicServlet#0" />
+            <element signature="method#login#0;class#TopicServlet#0" />
+            <element signature="method#exit#0;class#TopicServlet#0" />
+            <element signature="method#register#0;class#TopicServlet#0" />
+            <element signature="method#AddCommClass#0;class#TopicServlet#0" />
+            <element signature="method#DelCommClass#0;class#TopicServlet#0" />
+            <element signature="method#getCommoditys#0;class#TopicServlet#0" />
+            <element signature="method#AddCommodity#0;class#TopicServlet#0" />
+            <element signature="method#AddBrand#0;class#TopicServlet#0" />
+            <element signature="method#AddCommodiyType#0;class#TopicServlet#0" />
+            <element signature="method#SelectCommType#0;class#TopicServlet#0" />
+            <element signature="method#delCommodiyType#0;class#TopicServlet#0" />
+            <element signature="method#getCommClass#0;class#TopicServlet#0" />
+            <element signature="method#submitCommd#0;class#TopicServlet#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/DiscountsDaol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1664">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/commodity_pxDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Impl/commodity_pximpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5824">
+          <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -7,13 +7,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+
 import java.util.List;
 
+import entity.commodity_px;
 import org.brand.Brand;
 
 import Dao.CommClassDao;
-import Dao.CommodityImageDao;
 import Dao.CommodiyDao;
 import Dao.CommoidyTypeDao;
 import entity.CommodityType;
@@ -381,6 +381,7 @@ public class TopicServlet extends HttpServlet {
     	if(request.getParameter("recommend")!=null){
     		recommend=1;
     	}
+    	String particulars=request.getParameter("particulars");
     	String [] guarantees=request.getParameterValues("guarantee");
     	for(int i=0;i<guarantees.length;i++){
     		if(guarantees[i].equals("无忧退货")){
@@ -398,6 +399,7 @@ public class TopicServlet extends HttpServlet {
 		commd.setGuarantee1(guarantee1);
 		commd.setGuarantee2(guarantee2);
 		commd.setGuarantee3(guarantee3);
+		commd.setParticulars(new commodity_px(particulars));
 		int num=commDao.AddCommodity(commd);
 		if(num>=1){
 			out.print("添加成功");

@@ -9,6 +9,7 @@ import java.util.List;
 
 import entity.CommClass;
 import entity.Commodity;
+import entity.commodity_px;
 
 public class CommodiyDao extends BaseDao{
 	Connection conn=null;
@@ -71,7 +72,13 @@ public class CommodiyDao extends BaseDao{
 						return num;
 					}
 				}
-				
+				//添加商品详情
+				commodity_pxDao pxDao=new commodity_pxDao();
+				commd.getParticulars().setCommodity_id(commd.getCommodity_Id());
+				num=pxDao.Addcommodity_px(commd.getParticulars());
+				if(num==0){
+					return num;
+				}
 			}
 			
 		}
@@ -90,10 +97,8 @@ public class CommodiyDao extends BaseDao{
 			ps=conn.prepareStatement(sql);
 			if(page==1){
 				ps.setInt(1, page-1);
-				System.out.println(page-1);
 			}else{
 				ps.setInt(1, (page-1)*limit);
-				System.out.println((page-1)*limit);
 			}
 			ps.setInt(2, limit);
 			rs=ps.executeQuery();
@@ -195,6 +200,7 @@ public class CommodiyDao extends BaseDao{
 		Commodity commodity=null;
 		CommoidyTypeDao ctdao=new CommoidyTypeDao();
 		CommodityImageDao cimgdao=new CommodityImageDao();
+		commodity_pxDao pxDao=new commodity_pxDao();
 		try {
 			ps=conn.prepareStatement(sql);
 			ps.setInt(1,Commodity_Id);
@@ -217,6 +223,7 @@ public class CommodiyDao extends BaseDao{
 				commodity.setTime(rs.getString("Time"));
 				commodity.setCommTypeList(ctdao.getCommID_Types(rs.getInt("Commodity_Id")));
 				commodity.setImageList(cimgdao.getCommodityImage(rs.getInt("Commodity_Id")));
+				commodity.setParticulars(pxDao.Selcommodity_px(rs.getInt("Commodity_Id")));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

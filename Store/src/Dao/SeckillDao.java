@@ -30,20 +30,29 @@ public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seck
     }
 
     //查询秒杀活动
-    public List<Seckill> getSeckills() {
+    public List<Seckill> getSeckills(int page,int limit) {
         List<Seckill> list = new ArrayList<Seckill>();
         Connection conn = getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
-        String sql = "SELECT * FROM seckill";
+        String sql = "SELECT * FROM seckill LIMIT ?,?";
+
         try {
             ps = conn.prepareStatement(sql);
+            if(page==1){
+                ps.setInt(1, page-1);
+            }else{
+                ps.setInt(1, (page-1)*limit);
+            }
+            ps.setInt(2,limit);
             rs = ps.executeQuery();
             while (rs.next()){
                 Seckill seckill = new Seckill();
                 seckill.setId(rs.getInt("id"));
                 seckill.setName(rs.getString("Name"));
-                seckill.setOpenDate(rs.getDate("OpenDate"));
+                seckill.setOpenDate(rs.getDate("OpenData"));
+                seckill.setStopDate(rs.getDate("StopData"));
+                seckill.setIsopen(rs.getInt("isopen"));
                 list.add(seckill);
             }
         } catch (SQLException e) {
@@ -51,13 +60,33 @@ public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seck
         } finally {
             closeALL(conn,ps,rs);
         }
-        return null;
+        return list;
+    }
+    //查询count
+    public int getSeckillsCount(){
+        int num=0;
+        Connection conn=getConnection();
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        String sql = "SELECT Count(1) FROM seckill";
+        try {
+            ps=conn.prepareStatement(sql);
+            rs=ps.executeQuery();
+            rs.next();
+            num=rs.getInt(1);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(rs,ps,conn);
+        }
+        return num;
     }
 
     //增加秒杀商品
     public int AddSeckill_commodity(Seckill_commodity slc) {
-        String sql = "INSERT INTO seckill_commodity(seckill_Time_id,commodity_id,seckill_Price,seckill_Count,xg_Count) VALUES(?,?,?,?,?)";
-        Object[] objs = new Object[]{slc.getSeckill_Time_id(),slc.getCommodity_id(),slc.getSeckill_Price(),slc.getSeckill_Count(),slc.getXg_Count()};
+        String sql = "INSERT INTO seckill_commodity(seckill_id,seckill_Time_id,commodity_id,seckill_Price,seckill_Count,xg_Count) VALUES(?,?,?,?,?,?)";
+        Object[] objs = new Object[]{slc.getSeckill_Time_id(),slc.getSeckill_id(),slc.getCommodity_id(),slc.getSeckill_Price(),slc.getSeckill_Count(),slc.getXg_Count()};
         return update(sql,objs);
     }
 
@@ -135,5 +164,63 @@ public class SeckillDao extends BaseDao implements SeckillK, Seckill_timeK, Seck
             closeALL(conn,ps,rs);
         }
         return list;
+    }
+    //获取秒杀活动的秒杀时间段列表和商品数量
+    public List<Seckill_time> getSeckill_times_Select(int seckill_id,int page,int limit) {
+        List<Seckill_time> list = new ArrayList<Seckill_time>();
+        Connection conn = getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT *,\n" +
+                "(SELECT COUNT(1) FROM seckill_commodity \n" +
+                "WHERE seckill_commodity.seckill_Time_id=seckill_time.id \n" +
+                "AND seckill_commodity.seckill_id=?) AS COUNT \n" +
+                "FROM seckill_time \n" +
+                "LIMIT ?,?";
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1,seckill_id);
+            if(page==1){
+                ps.setInt(2, page-1);
+            }else{
+                ps.setInt(2, (page-1)*limit);
+            }
+            ps.setInt(3,limit);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                Seckill_time st = new Seckill_time();
+                st.setId(rs.getInt("id"));
+                st.setName(rs.getString("Name"));
+                st.setOpenTime(rs.getTime("OpenTime"));
+                st.setStopTime(rs.getTime("StopTime"));
+                st.setIsOpen(rs.getInt("isOpen"));
+                st.setCount(rs.getInt("count"));
+                list.add(st);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(conn,ps,rs);
+        }
+        return list;
+    }
+    public int getSeckill_Count(){
+        int num=0;
+        Connection conn=getConnection();
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        String sql = "SELECT Count(1) FROM Seckill_time";
+        try {
+            ps=conn.prepareStatement(sql);
+            rs=ps.executeQuery();
+            rs.next();
+            num=rs.getInt(1);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(rs,ps,conn);
+        }
+        return num;
     }
 }

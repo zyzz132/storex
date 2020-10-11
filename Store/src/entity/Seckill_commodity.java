@@ -2,11 +2,20 @@ package entity;
 //秒杀活动商品实体类
 public class Seckill_commodity {
     private int id;                 //编号
+    private int seckill_id;         //秒杀活动id
     private int seckill_Time_id;    //秒杀时间id
     private int commodity_id;       //商品id
     private double seckill_Price;   //秒杀价格
     private int seckill_Count;      //秒杀数量
     private int xg_Count;           //限购数量
+
+    public int getSeckill_id() {
+        return seckill_id;
+    }
+
+    public void setSeckill_id(int seckill_id) {
+        this.seckill_id = seckill_id;
+    }
 
     public int getId() {
         return id;

@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html;charset=utf-8"%>
 <style>
 .layui-carousel {
-	width: 1300px;
+	width: 1200px;
 	height: 440px;
 }
 </style>
 <div class="layui-carousel" id="test10">
 	<div carousel-item="">
 		<div>
-			<img src="images/1.png" width="1300px">
+			<img src="images/1.png" width="1200px">
 		</div>
 		<div>
 			<img src="images/2.png">
 		</div>
 		<div>
-			<img src="images/3.jpg" width="1300px">
+			<img src="images/3.jpg" width="1200px">
 		</div>
 		<div>
 			<img src="images/4.png">
@@ -57,7 +57,7 @@
 						//图片轮播
 						carousel.render({
 							elem : '#test10',
-							width : '1300px',
+							width : '1200px',
 							height : '440px',
 							interval : 5000
 						});

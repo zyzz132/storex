@@ -151,11 +151,11 @@
             </a> v1.1.0				</p>
             <p>
                 <a href="http://www.beian.miit.gov.cn/" target="_blank">
-                    <img src="${path}images/footer/备案.png" width="20" height="20" alt="ICP备案">鄂ICP备xxxxxxxx号</a>
+                    <img src="${path}images/footer/备案.png" width="20" height="20" alt="">鄂ICP备xxxxxxxx号</a>
             </p>
             <p>
                 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52062702000117" target="_blank">
-                    <img src="${path}images/footer/安备.png" width="20" height="20" alt="公安备案">
+                    <img src="${path}images/footer/安备.png" width="20" height="20" alt="">
                     贵公网安备 xxxxxxxxxxxx号						</a>
             </p>
         </div>

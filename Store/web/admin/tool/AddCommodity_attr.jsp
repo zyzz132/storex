@@ -16,17 +16,19 @@
 <html>
 <head>
     <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../layui/css/layui.css">
     <script src="../../js/jquery-1.12.2.js"></script>
     <script src="../js/AddCommodiy_attr.js"></script>
     <style>
     	.layui-upload-img{
-    	width: 120;
-    	height: 120;}
+    	width: 120px;
+    	height: 120px;}
     </style>
 </head>
-<body style="padding: 20px">
+<body>
 <script>
 	var types='<%=type%>';
 </script>
@@ -89,6 +91,15 @@
       				<input type="checkbox" name="guarantee" title="免费包邮" checked="">
            	 	</div>
         	</div>
+            <!--丰富文本框-->
+            <div class="layui-form-item">
+                <label class="layui-form-label">商品详情 :</label>
+                <div class="layui-input-block">
+                <div id="editor" style="min-height: 100px">
+                </div>
+                </div>
+            </div>
+            <input type="hidden" name="particulars" value="">
 	        <div class="layui-input-block">
 	        	<button type="submit" class="layui-btn" id="submit_a">提交</button>
 	        </div>
@@ -96,7 +107,14 @@
         
     </div>
 </div>
+
 </body>
+<style>
+    .ck-content{
+        min-height: 100px;
+    }
+</style>
+
 <script src="../../layui/layui.js" charset="utf-8"></script>
 <script>
 	
@@ -135,7 +153,69 @@
 	    }
 	  });
 	});
-  
+
+</script>
+<script src="../ckeditor5/build/ckeditor.js"></script>
+
+<script>
+    var myEditor=null;
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            //toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ],
+            toolbar: {
+                items: [
+                    'heading',
+                    '|',
+                    'bold',
+                    'italic',
+                    'link',
+                    'bulletedList',
+                    'numberedList',
+                    '|',
+                    'indent',
+                    'outdent',
+                    '|',
+                    'imageUpload',
+                    'blockQuote',
+                    'insertTable',
+                    'mediaEmbed',
+                    'undo',
+                    'redo'
+                ]
+            },
+            language: 'zh-cn',
+            image: {
+                toolbar: [
+                    'imageTextAlternative',
+                    'imageStyle:full',
+                    'imageStyle:side'
+                ]
+            },
+            table: {
+                contentToolbar: [
+                    'tableColumn',
+                    'tableRow',
+                    'mergeTableCells'
+                ]
+            },
+            licenseKey: '',
+            ckfinder: {
+                uploadUrl: "${path}/admin/CommdFileServlet"
+            }
+        } )
+        .then( editor => {
+        window.editor = editor;
+        myEditor=editor;
+    } )
+    .catch( err => {
+        console.error( err.stack );
+    } )
+    $(".layui-form").submit(function () {
+        var ss=myEditor.getData();
+        $("input[name='particulars']").val(ss);
+        alert($("input[name='particulars']").val());
+        return true;
+    })
 </script>
 
 </html>

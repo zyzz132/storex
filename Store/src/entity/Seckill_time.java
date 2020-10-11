@@ -9,6 +9,15 @@ public class Seckill_time {
     private Time OpenTime;  //开始时间
     private Time StopTime;  //结束时间
     private int isOpen;     //是否启动(1:0)
+    private int count;      //商品数量
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public int getId() {
         return id;

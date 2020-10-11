@@ -4,17 +4,17 @@ package sqlreq;
  * 用户类父类
  */
 public class user {
-    private String _id;//用户id
+    private int _id;//用户id
     private String _name;//用户名称
     private String _phone;//手机号
     private String _email;//邮箱
     private int _type;//用户类型id
     private String _time;//注册时间
-    public String get_id() {
+    public int get_id() {
         return _id;
     }
 
-    public void set_id(String _id) {
+    public void set_id(int _id) {
         this._id = _id;
     }
 
@@ -58,7 +58,7 @@ public class user {
         this._time = _time;
     }
 
-    public user(String id,String name,String phone,String Email,int type,String time){
+    public user(int id,String name,String phone,String Email,int type,String time){
         this._id=id;
         this._name=name;
         this._phone=phone;

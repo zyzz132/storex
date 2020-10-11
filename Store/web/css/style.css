@@ -20,13 +20,12 @@ body{}
 .nav>.navT>.allClass{background-color: #d2364c;color: white;position: relative;line-height: 40px;width: 180px;text-align: center;font-size: 16px}
 .nav>.navT>.allClass>.CommdClassList{position: absolute;display: none;z-index: 2;width: 100%;background-color: #3F3F3F}
 
-.nav>.navT>ul{width: 1000px;margin-left: 0px;font-weight: 600;overflow: hidden;}
+.nav>.navT>ul{width: 1000px;margin-left: 0px;font-weight: 600;overflow: hidden;margin-top:1px}
 .nav>.navT>ul>li{padding: 10px 20px ;position: relative;}
 .nav>.navT>ul>li>a:hover,.nav>.navT>ul>.index-nav>a{color: #d2364c;}
 .nav>.navT>ul>li>a:hover:after{opacity: 1}
 .nav>.navT>ul>li>a:after{opacity: 0;position: absolute;content: "";bottom: -13px;left: calc(50% - 19px);width: 0;height:0;border-left:20px solid transparent;border-right: 20px solid transparent;border-bottom: 20px solid #D2364C;}
 .nav>.navT>ul>.index-nav>a:after{opacity: 1}
-
 
 .top_2{width: 1200px;margin: 0 auto;position: relative;}
 .top_2>div{display: inline-block;vertical-align: middle;}
@@ -44,11 +43,9 @@ body{}
 .top_2>.Shopping_box>.Shopping_btn {cursor: pointer;width: 100px;height: 100%;text-align: center; border: 1px solid #ddd;position: relative;line-height: 45px;color: red;font-size: 18px;}
 .top_2>.Shopping_box>.Shopping_btn:hover{border-color: red;}
 .top_2>.Shopping_box>.Shopping_btn>p{position: absolute;top: 1px;right: 10px;background-color: red;border-radius: 5px;color: white;line-height: 15px;padding: 3px;font-size: 11px;}
-
 /*轮播*/
 .lb{padding:5px; margin:0px auto; width:1200px;padding-top:0px;}
 .lb #test10{width:1500px;}
-
 /*商品展示页面*/
 .Commod_info .Commod_title{margin-bottom: 10px}
 .Commod_info{width: 1200px;margin: 0 auto}
@@ -85,14 +82,10 @@ body{}
 .Commod_info>.Commod_typeInfo>.liouliang>ul>li>.liouliang-value{color: #D2364C;font-weight: 700}
 .buy-Storev{height: 35px}
 .buy{display: inline-block;border: 1px solid #D2364C;height: 100%;line-height: 35px;width: 98px;text-align: center;box-sizing: border-box;color: #D2364C;background-color:#FFEDED }
-
 .Commod-dtls>.left-rcmd{width: 20%;display: inline-block;margin: 10px 0px}
 .Commod-dtls>.Commod-dtl-comment{width: 78%;display: inline-block;margin-left: 20px;}
 .Commod-dtls>.Commod-dtl-comment .layui-tab-title{border-bottom: 1px solid #D2364C}
 .Commod-dtls>.Commod-dtl-comment .layui-this{background-color: #D2364C;color: white;border-bottom: 1px solid #D2364C}
-
-
-
 /*-------------------Shopv购物车文件---------------------*/
 .table-title{padding:10px 10px;}
 .table-title>li{display: inline-block;}
@@ -111,13 +104,6 @@ body{}
 .shopv-allC>ul:last-child{float:right}
 .shopv-allC>ul>li{display: inline-block;padding: 0 20px}
 .shopv-js span{color: red;font-size: 18px;font-weight: 600}
-
-
-
-
-
-
-
 /*-------------------Footer尾部文件---------------------*/
 .plugins-footercustomerservice-customer-service{background: #f8f8f8;padding: 10px 0;margin-top: 20px;}
 .am-container{margin: 0 auto;}
@@ -148,3 +134,26 @@ footer a{color: #b1b1b1}
 .am-u-md-4>li{    text-align: left;line-height: 24px;}
 .am-footer-miscs .am-container {border-top: 1px solid #383838;padding-top: 10px;}
 .am-footer-default .am-footer-miscs p {display: inline-block;margin: 5px;}
+
+/*--------------------------秒杀活动--------------------*/
+.index-Sekill{width: 1200px;margin: 0 auto;height: 260px;margin-top:20px;}
+.index-Sekill>.Sekill-sjd{height: 260px;width: 190px;background: url("../images/sekill.png")}
+.index-Sekill>.Sekill-sjd>*{color: white;text-align: center;}
+.index-Sekill>.Sekill-sjd>h1{font-weight: 900;padding: 35px 0px;}
+.index-Sekill>.Sekill-sjd>p{padding-top: 45px;font-size: 14px}
+.index-Sekill>.Sekill-sjd>p>span{font-weight: 600;font-size: 16px}
+.index-Sekill>div{display: inline-block;vertical-align: top}
+.sytime{padding-top: 20px}
+.sytime>.xs:after,.sytime>.fz:after{content: ":";display: inline-block;width: 20px;text-align: center}
+.sytime>span{font-size: 24px;background-color: #2E2D3C;color: white;padding: 5px}
+.Sekill-list>ul>li{display: inline-block;padding: 10px;width: 200px;}
+.Sekill-list li>a>img{width: 180px;height: 180px}
+.Sekill-price{border: 1px solid red;;background: red;color: wheat;width: 50%;display: inline-block;text-align: center;font-size: 16px;line-height: 22px;font-weight: 700;}
+.Sekill-list>ul>li>a>div>.price{ border: 1px solid red;
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    width: 47%;
+    text-align: center;
+    line-height: 22px;
+    margin-left: -4px;text-decoration: line-through;}

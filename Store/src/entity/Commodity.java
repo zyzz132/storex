@@ -26,6 +26,15 @@ public class Commodity {
     private int guarantee1;//无忧退货
     private int guarantee2;//快速退款
     private int guarantee3;//免费包邮
+    private commodity_px particulars;
+
+    public commodity_px getParticulars() {
+        return particulars;
+    }
+
+    public void setParticulars(commodity_px particulars) {
+        this.particulars = particulars;
+    }
 
     public int getPutaway() {
 		return putaway;

@@ -14,8 +14,12 @@
 <%@ include file="../Header.jsp" %>
 <%
     ShopvDaoimpl shopvDao=new ShopvDaoimpl();
-    List<shopv> shopvList=shopvDao.getshopvById(1);
-    request.setAttribute("shopvs",shopvList);
+    if(userinfo!=null){
+        List<shopv> shopvList=shopvDao.getshopvById(userinfo.get_id());
+        request.setAttribute("shopvs",shopvList);
+    }
+
+
 %>
 <script src="js/shopv.js"></script>
 <div class="shopv-section">
@@ -28,6 +32,7 @@
 
 
         </c:if>
+
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
                 <div>

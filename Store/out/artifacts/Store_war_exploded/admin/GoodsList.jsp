@@ -54,7 +54,7 @@
 				,{field:'CommImage_Url',width:140,title:'商品图片',style:"height:80px",templet:function(d){
 					return "<img src='../upload/"+d.CommImage_Url+"' alt='' style='width:80px;height: 80px;'/>"},align:'center'	}
                 ,{title: '商品名称',align:'center',templet:function(d){
-                	return '<div style="padding: 5% 0px;"><p>'+d.Commodity_Name+'</p>'+'<p>'+d.CommClass_Id+'</p></div>';
+                	return '<div style="padding: 5% 0px;"><p><a href="../Commod?Commd_id='+d.Commodity_Id+'"  target="_blank">'+d.Commodity_Name+'</a></p>'+'<p>'+d.CommClass_Id+'</p></div>';
                 }}
                 ,{width:200, title: '副标题',align:'center',templet:function(d){
                 	return '<div style="padding: 5% 0px;"><p>价格：￥'+d.selling_price+'</p>'+'<p>货号：'+d.Commodity_No+'</p></div>';

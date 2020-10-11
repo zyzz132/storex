@@ -10,7 +10,7 @@
 			</ul>
 		</div>
 		<ul>
-			<li class="index-nav"><a href="">首页</a></li>
+			<li class="index"><a href="index.jsp">首页</a></li>
 			<li><a href="">限时秒杀</a></li>
 			<li><a href="">品牌推荐</a></li>
 		</ul>

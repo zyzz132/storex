@@ -15,7 +15,7 @@ import java.util.List;
 public class admin  extends user implements CommodityTool, brandDao {
 
     BaseDao bd=new BaseDao();
-    public admin(String id,String name,String phone,String Email,int type,String time){
+    public admin(int id,String name,String phone,String Email,int type,String time){
         super(id,name,phone,Email,type,time);
 
     }
