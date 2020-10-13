@@ -83,9 +83,11 @@ body{}
 .buy-Storev{height: 35px}
 .buy{display: inline-block;border: 1px solid #D2364C;height: 100%;line-height: 35px;width: 98px;text-align: center;box-sizing: border-box;color: #D2364C;background-color:#FFEDED }
 .Commod-dtls>.left-rcmd{width: 20%;display: inline-block;margin: 10px 0px}
-.Commod-dtls>.Commod-dtl-comment{width: 78%;display: inline-block;margin-left: 20px;}
+.Commod-dtls>.Commod-dtl-comment{width: 78%;display: inline-block;margin-left: 20px;vertical-align: top}
 .Commod-dtls>.Commod-dtl-comment .layui-tab-title{border-bottom: 1px solid #D2364C}
 .Commod-dtls>.Commod-dtl-comment .layui-this{background-color: #D2364C;color: white;border-bottom: 1px solid #D2364C}
+figure{margin: 0px;text-align: center;}
+figure img{max-width: 100%;}
 /*-------------------Shopv购物车文件---------------------*/
 .table-title{padding:10px 10px;}
 .table-title>li{display: inline-block;}

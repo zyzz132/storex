@@ -1,32 +1,46 @@
-$(function () {
-    $(".delbtn").click(function () {
-        var node=$(this).parent().parent().find(":first").text();
+//页面层
+function add2() {
 
-        //询问框
-        layer.confirm('您确定要删除该分类？', {
-            btn: ['确定','取消'] //按钮
-        }, function(){
-            var type="delCommClass";
-            $.ajax({
-                url:'../topic',
-                type:'post',
-                data:{ClassID:node,prol:type},
-                dataType:'text',
-                success:function () {
+    layer.open({
+        type: 2,
+        title:'添加商品分类',
+        area: ['765px', '750px'],
+        fixed: false, //不固定
+        maxmin: true,
+        content: 'tool/AddClass.jsp',
+        end:function () {
+            sun();
+        }
+    });
+
+}
+
+function del(node) {
+    var id=node.parentNode.parentNode.parentNode.firstChild.firstChild.textContent;
+    layer.confirm('您确定要删除该分类？'+id, {
+        btn: ['确定','取消'] //按钮
+    }, function(){
+
+        $.ajax({
+            url:path+'admin/DelCommdClass',
+            type:'post',
+            data:{id:id},
+            dataType:'JSON',
+            success:function (rst) {
+                console.log(rst);
+                if(rst.code==1){
                     layer.msg('已删除', {icon: 1});
-                    location.href="commclass.jsp";
-                },
-                error:function(xhr){alert('php页面有错误！'+xhr.responseText);}
 
-            })
+                    sun();
+                }else{
+                    layer.msg('删除失败', {icon: 1});
+                }
 
-        }, function(){
-            // layer.msg('也可以这样', {
-            //     time: 20000, //20s后自动关闭
-            //     btn: ['明白了', '知道了']
-            // });
-        });
+            },
+            error:function(xhr){layer.msg('接口异常', {icon: 1});}
 
-    })
+        })
 
-})
+    }, function(){
+    });
+}

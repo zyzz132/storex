@@ -3,7 +3,7 @@
 	<%@ include file="Header.jsp" %>
 <script>
 	$(function () {
-		$("index").addClass("index-nav");
+		$(".index").addClass("index-nav");
 	})
 </script>
 	<div class="lb"><%@ include file="slideshow.jsp" %></div>

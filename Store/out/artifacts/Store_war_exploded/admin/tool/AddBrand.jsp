@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../../js/jquery-1.12.2.js"></script>
 </head>
-<body style="padding: 20px;background-color: white">
+<body style="padding-right: 50px;">
     <form action="${path}topic" method="post" class="layui-form">
         <input type="hidden" name="prol" value="AddBran">
         <div class="layui-form-item">
@@ -40,7 +40,7 @@
                     <img class="layui-upload-img" id="brand_logo">
                     <p id="demoText1"></p>
                 </div>
-                <input type="hidden" name="brand_logoID" value="" id="file1">
+                <input type="hidden" name="brand_logoID" value="0" id="file1">
             </div>
         </div>
         <!--品牌专区大图-->
@@ -52,7 +52,7 @@
                     <img class="layui-upload-img" id="brand_bigImage">
                     <p id="demoText2"></p>
                 </div>
-                <input type="hidden" name="brand_bigImageID" value="" id="file2">
+                <input type="hidden" name="brand_bigImageID" value="0" id="file2">
             </div>
         </div>
         <div class="layui-form-item">
@@ -100,7 +100,7 @@
         //logo图片上传
         var uploadInst = upload.render({
             elem: '#test1'
-            ,url: '${path}/File?brand=0' //改成您自己的上传接口
+            ,url: '${path}/admin/CommdClassImage' //改成您自己的上传接口
             ,before: function(obj){
                 //预读本地文件示例，不支持ie8
                 obj.preview(function(index, file, result){
@@ -128,7 +128,7 @@
         //品牌专区图片上传
         var uploadInst = upload.render({
             elem: '#test2'
-            ,url: '${path}/File?brand=1' //改成您自己的上传接口
+            ,url: '${path}/admin/CommdClassImage' //改成您自己的上传接口
             ,before: function(obj){
                 //预读本地文件示例，不支持ie8
                 obj.preview(function(index, file, result){

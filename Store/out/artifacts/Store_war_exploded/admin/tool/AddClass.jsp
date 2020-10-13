@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../../layui/layui.js" charset="utf-8"></script>
 </head>
-<body>
-<div class="box_A addclassbox">
+<body style="padding-right: 50px;">
     <form action="../../topic" method="post" class="layui-form">
         <div class="layui-form-item">
             <label class="layui-form-label">分类名称 :</label>
@@ -78,7 +77,6 @@
             </div>
         </div>
     </form>
-</div>
 <script>
     layui.use(['form', 'layedit', 'laydate'], function(){
         var form = layui.form

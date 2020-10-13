@@ -32,7 +32,7 @@
 <script>
 	var types='<%=type%>';
 </script>
-<div class="box_A addclassbox">
+<div class="box_A addclassbox" >
     <div class="lc_c">
         <div class="lc_c_l lc_wc"><div class="bz_x"><div class="bz" >1</div><div class="bz_xian"></div></div><div class="bz_text" >填写商品信息</div></div>
         <div class="lc_c_l lc_che"><div class="bz_x"><div class="bz">2</div><div class="bz_xian"></div></div><div class="bz_text">填写商品属性</div></div>
@@ -213,7 +213,6 @@
     $(".layui-form").submit(function () {
         var ss=myEditor.getData();
         $("input[name='particulars']").val(ss);
-        alert($("input[name='particulars']").val());
         return true;
     })
 </script>

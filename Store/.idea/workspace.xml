@@ -30,80 +30,65 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="重编译">
-      <change afterPath="$PROJECT_DIR$/src/Dao/DiscountsDaol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dao/Discounts_CommdDaol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dao/Discounts_recordDaol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dao/commodity_pxDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Impl/Discounts_Commdimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Impl/Discounts_recordimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Impl/Discountsimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Impl/commodity_pximpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Discounts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Discounts_Commd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Discounts_record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/commodity_px.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/CommdFileServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/list/SekillList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/list/SekillTime.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/text/Sekill.jsp" afterDir="false" />
+    <list default="true" id="c23e5452-2655-4ce8-827d-33413112c14d" name="Default Changelist" comment="10-11">
+      <change afterPath="$PROJECT_DIR$/src/Dao/BillDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impl/BillImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/CommdClassServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/DelCommdClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/DelCommdServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/adminServlet/UpCommdStatcServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Commodity/recommend.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Commdoity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Shopv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Commodity/Shopv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/Footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/BrandDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommClassDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommodiyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/CommodiyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Dao/SeckillDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Commodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_commodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/Seckill_time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/entity/bill_commodity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/TopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/org/servlet/TopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/UserInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/mysqlConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/mysqlConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/WEB-INF/classes/sqlreq/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/Commclassl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/Commclassl.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/GoodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/GoodsList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/js/GoodsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/js/GoodsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/js/commclass.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/js/commclass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddBrand.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddBrand.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddCommodity_attr.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddCommodity_attr.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddGood.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/admin/tool/AddGood.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/slideshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Store_war_exploded/slideshow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/BrandDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/BrandDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/CommClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommClassDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/CommodiyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/CommodiyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SeckillDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Impl/SeckillK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impl/SeckillK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Commodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Seckill_commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Seckill_commodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Seckill_time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Seckill_time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/bill_commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/bill_commodity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sqlreq/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sqlreq/admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sqlreq/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlreq/user.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Commodity/Shopv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Commodity/Shopv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BrandDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/BrandDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommClassDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommodiyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/CommodiyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/SeckillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/SeckillDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/SeckillK.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Impl/SeckillK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Commodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_commodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_time.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/Seckill_time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/entity/bill_commodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/entity/bill_commodity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/TopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/org/servlet/TopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/UserInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/mysqlConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/mysqlConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/sqlreq/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/Commclassl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/Commclassl.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/GoodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/GoodsList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/js/GoodsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/js/GoodsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/js/commclass.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/js/commclass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/tool/AddBrand.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/tool/AddBrand.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/tool/AddClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/tool/AddClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/tool/AddGood.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/tool/AddGood.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/slideshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/slideshow.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -115,91 +100,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.63702804">
+    <splitter split-orientation="horizontal" split-proportion="0.7440294">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/adminServlet/SekillServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1092">
-                  <caret line="154" column="3" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="3" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#doPost#0;class#TopicServlet#0" />
-                    <element signature="method#login#0;class#TopicServlet#0" />
-                    <element signature="method#exit#0;class#TopicServlet#0" />
-                    <element signature="method#register#0;class#TopicServlet#0" />
-                    <element signature="method#AddCommClass#0;class#TopicServlet#0" />
-                    <element signature="method#DelCommClass#0;class#TopicServlet#0" />
-                    <element signature="method#getCommoditys#0;class#TopicServlet#0" />
-                    <element signature="method#AddCommodity#0;class#TopicServlet#0" />
-                    <element signature="method#AddBrand#0;class#TopicServlet#0" />
-                    <element signature="method#AddCommodiyType#0;class#TopicServlet#0" />
-                    <element signature="method#SelectCommType#0;class#TopicServlet#0" />
-                    <element signature="method#delCommodiyType#0;class#TopicServlet#0" />
-                    <element signature="method#getCommClass#0;class#TopicServlet#0" />
-                    <element signature="method#submitCommd#0;class#TopicServlet#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
+            <entry file="file://$PROJECT_DIR$/web/admin/Commclassl.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
-                  <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+                <state relative-caret-position="520">
+                  <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
+            <entry file="file://$PROJECT_DIR$/src/Dao/BrandDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Dao/DiscountsDaol.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1664">
-                  <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+                <state relative-caret-position="246">
+                  <caret line="153" selection-start-line="153" selection-end-line="153" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="method#getBrandCount#0;class#BrandDao#0" />
+                    <element signature="method#getBrandInfo#0;class#BrandDao#0" />
+                    <element signature="method#getBrandInfoCount#0;class#BrandDao#0" />
+                    <element signature="method#getBrandlist#0;class#BrandDao#0" />
+                    <element signature="method#addimag#0;class#BrandDao#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Dao/commodity_pxDao.java">
+            <entry file="file://$PROJECT_DIR$/src/Dao/CommClassDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="988">
-                  <caret line="46" column="57" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="57" />
+                <state relative-caret-position="296">
+                  <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="method#getCommClass#0;class#CommClassDao#0" />
+                    <element signature="method#getcount#0;class#CommClassDao#0" />
+                    <element signature="e#2293#2294#0" expanded="true" />
+                    <element signature="e#2317#2318#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Impl/commodity_pximpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -207,8 +146,58 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5824">
-                  <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
+                <state relative-caret-position="348">
+                  <caret line="281" column="5" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/js/GoodsList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="16" selection-start-line="16" selection-end-line="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/commclass.jsp">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/GoodsList.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/admin.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/js/commclass.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/adminServlet/DelCommdClass.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="104">
+                  <caret line="12" column="70" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -220,8 +209,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+                <state relative-caret-position="-786">
+                  <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1872">
+                  <caret line="72" selection-start-line="72" selection-end-line="72" />
                 </state>
               </provider>
             </entry>
@@ -245,6 +243,7 @@
     <findStrings>
       <find>upload(){</find>
       <find>UploadAdapter</find>
+      <find>demo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -257,17 +256,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/sqlreq/user.java" />
         <option value="$PROJECT_DIR$/src/sqlreq/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/sqlreq/admin.java" />
         <option value="$PROJECT_DIR$/src/sqlreq/mysqlConn.java" />
         <option value="$PROJECT_DIR$/web/admin/ckeditor/index.html" />
         <option value="$PROJECT_DIR$/web/Commodity/Shopv.jsp" />
         <option value="$PROJECT_DIR$/web/nav.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/css/style.css" />
         <option value="$PROJECT_DIR$/web/slideshow.jsp" />
         <option value="$PROJECT_DIR$/web/text/Sekill.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/admin/admin.jsp" />
         <option value="$PROJECT_DIR$/web/Footer.jsp" />
         <option value="$PROJECT_DIR$/src/entity/Seckill_commodity.java" />
         <option value="$PROJECT_DIR$/src/Impl/SeckillK.java" />
@@ -277,16 +271,38 @@
         <option value="$PROJECT_DIR$/web/admin/list/SekillList.jsp" />
         <option value="$PROJECT_DIR$/web/admin/list/SekillTime.jsp" />
         <option value="$PROJECT_DIR$/src/org/adminServlet/CommdFileServlet.java" />
-        <option value="$PROJECT_DIR$/web/admin/GoodsList.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" />
         <option value="$PROJECT_DIR$/src/Dao/DiscountsDaol.java" />
         <option value="$PROJECT_DIR$/src/entity/Commodity.java" />
-        <option value="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" />
         <option value="$PROJECT_DIR$/src/org/servlet/CommodityServlet.java" />
         <option value="$PROJECT_DIR$/src/Dao/commodity_pxDao.java" />
         <option value="$PROJECT_DIR$/src/Impl/commodity_pximpl.java" />
-        <option value="$PROJECT_DIR$/src/Dao/CommodiyDao.java" />
+        <option value="$PROJECT_DIR$/web/admin/css/style.css" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/Commodity/Commdoity.jsp" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/CommdClassServlet.java" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/sqlreq/admin.java" />
+        <option value="$PROJECT_DIR$/web/Commodity/recommend.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/tool/AddGood.jsp" />
+        <option value="$PROJECT_DIR$/src/Dao/BrandDao.java" />
+        <option value="$PROJECT_DIR$/src/Impl/BillImpl.java" />
+        <option value="$PROJECT_DIR$/src/entity/bill.java" />
+        <option value="$PROJECT_DIR$/src/entity/bill_commodity.java" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/UpCommdStatcServlet.java" />
+        <option value="$PROJECT_DIR$/src/Dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/Dao/CommodiyDao.java" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/DelCommdServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/servlet/TopicServlet.java" />
+        <option value="$PROJECT_DIR$/web/admin/GoodsList.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/tool/AddClass.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/tool/AddBrand.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/js/GoodsList.js" />
+        <option value="$PROJECT_DIR$/src/Dao/CommClassDao.java" />
+        <option value="$PROJECT_DIR$/src/org/adminServlet/DelCommdClass.java" />
+        <option value="$PROJECT_DIR$/web/admin/admin.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/Commclassl.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/js/commclass.js" />
       </list>
     </option>
   </component>
@@ -298,8 +314,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="212" />
-    <option name="y" value="8" />
+    <option name="x" value="143" />
+    <option name="y" value="163" />
     <option name="width" value="1370" />
     <option name="height" value="1056" />
   </component>
@@ -310,8 +326,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,33 +348,7 @@
               <item name="Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="adminServlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Store" type="b2602c69:ProjectViewProjectNode" />
@@ -371,12 +359,28 @@
               <item name="Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Store" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Commodity" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -388,7 +392,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602428982925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602525965807" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
@@ -406,19 +410,19 @@
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Store\storex\Store\src\Dao" />
+      <recent name="D:\Store\storex\Store\src\Impl" />
+      <recent name="D:\Store\storex\Store\src\entity" />
+      <recent name="D:\storex\Store\web\WEB-INF\lib" />
+      <recent name="D:\storex\Store\src\serice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Store\storex\Store\src\Dao" />
       <recent name="D:\Store\storex\Store\src\Impl" />
       <recent name="D:\Store\storex\Store\src\entity" />
       <recent name="D:\storex\Store\src\entity" />
       <recent name="D:\storex\Store\src\Impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Store\storex\Store\src\entity" />
-      <recent name="D:\Store\storex\Store\src\Impl" />
-      <recent name="D:\storex\Store\web\WEB-INF\lib" />
-      <recent name="D:\storex\Store\src\serice" />
-      <recent name="D:\storex\Store\out\artifacts\Store_war_exploded\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -780,7 +784,9 @@
       <workItem from="1602307758772" duration="7088000" />
       <workItem from="1602326887505" duration="16173000" />
       <workItem from="1602392745959" duration="10205000" />
-      <workItem from="1602425223664" duration="1295000" />
+      <workItem from="1602425223664" duration="1538000" />
+      <workItem from="1602461333997" duration="23694000" />
+      <workItem from="1602513289445" duration="12738000" />
     </task>
     <task id="LOCAL-00001" summary="商品收藏">
       <created>1601646754644</created>
@@ -810,11 +816,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602158002804</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="10-11">
+      <created>1602429131510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602429131510</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80053000" />
+    <option name="totallyTimeSpent" value="116728000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -828,18 +841,18 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72162163" visible="true" weight="0.12739871" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7190889" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" weight="0.10021322" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.27837837" side_tool="true" visible="true" weight="0.12739871" />
+      <window_info id="Web" order="7" sideWeight="0.28091106" side_tool="true" visible="true" weight="0.12953092" />
       <window_info id="设计器" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19739696" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2537961" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32212582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -850,7 +863,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.34273317" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3253796" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.19739696" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -959,7 +972,8 @@
     <MESSAGE value="商品收藏" />
     <MESSAGE value="导航与尾部文件" />
     <MESSAGE value="重编译" />
-    <option name="LAST_COMMIT_MESSAGE" value="重编译" />
+    <MESSAGE value="10-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="10-11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" />
@@ -1018,183 +1032,6 @@
     <state x="1000" y="487" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1920.235.1920.1040/2560.247.1920.1040@0.0.2560.1400" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" selection-start-line="24" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/sample/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/sample/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/sekill.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mysql.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="25" column="70" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/servlet/FileServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="157" column="89" lean-forward="true" selection-start-line="157" selection-start-column="89" selection-end-line="157" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/slideshow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/text/Sekill.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/Commclassl.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/BrandList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="130" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/CommodiyList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Impl/SeckillK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Impl/Seckill_timeK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Impl/Seckill_commodityK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Seckill_commodity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1482" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/ckeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="4" column="666767" selection-start-line="4" selection-start-column="666754" selection-end-line="4" selection-end-column="666767" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/de.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/eu.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/ckeditor5/build/translations/zh-cn.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1202,13 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="51" column="62" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="81" column="63" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1264,32 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/GoodsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
-          <folding>
-            <element signature="n#script#1;n#html#0;n#!!top" />
-            <element signature="e#5156#5624#0#HTML" />
-            <element signature="e#5775#7006#0#HTML" />
-            <element signature="e#7034#7066#0#HTML" />
-            <element signature="e#7095#7131#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/adminServlet/BrandServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1328,50 +1132,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/Impl/commodity_pximpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="154" column="3" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#doPost#0;class#TopicServlet#0" />
-            <element signature="method#login#0;class#TopicServlet#0" />
-            <element signature="method#exit#0;class#TopicServlet#0" />
-            <element signature="method#register#0;class#TopicServlet#0" />
-            <element signature="method#AddCommClass#0;class#TopicServlet#0" />
-            <element signature="method#DelCommClass#0;class#TopicServlet#0" />
-            <element signature="method#getCommoditys#0;class#TopicServlet#0" />
-            <element signature="method#AddCommodity#0;class#TopicServlet#0" />
-            <element signature="method#AddBrand#0;class#TopicServlet#0" />
-            <element signature="method#AddCommodiyType#0;class#TopicServlet#0" />
-            <element signature="method#SelectCommType#0;class#TopicServlet#0" />
-            <element signature="method#delCommodiyType#0;class#TopicServlet#0" />
-            <element signature="method#getCommClass#0;class#TopicServlet#0" />
-            <element signature="method#submitCommd#0;class#TopicServlet#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/DiscountsDaol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="338">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dao/commodity_pxDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
+        <state relative-caret-position="565">
           <caret line="46" column="57" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1379,31 +1149,316 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Impl/commodity_pximpl.java">
+    <entry file="file://$PROJECT_DIR$/src/Dao/DiscountsDaol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="565">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/Commodity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5824">
-          <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
+        <state relative-caret-position="638">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        <state relative-caret-position="104">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Commodity/Commdoity.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        <state relative-caret-position="156">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sqlreq/TestServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sqlreq/mysqlConn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="method#login#0;class#mysqlConn#0" />
+            <element signature="method#AddUser#0;class#mysqlConn#0" />
+            <element signature="method#loadUser#0;class#mysqlConn#0" />
+            <element signature="method#getGoodsList#0;class#mysqlConn#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/servlet/FileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/CommdClassServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Commodity/recommend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-786">
+          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sqlreq/admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+          <folding>
+            <element signature="method#admin#0;class#admin#0" />
+            <element signature="method#AddClass#0;class#admin#0" />
+            <element signature="method#getCommClass#0;class#admin#0" />
+            <element signature="method#delCommClass#0;class#admin#0" />
+            <element signature="method#getCommoditys#0;class#admin#0" />
+            <element signature="method#AddBrand#0;class#admin#0" />
+            <element signature="method#AddCommodity#0;class#admin#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/bill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/bill_commodity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/BillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Impl/BillImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="116" column="33" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+          <folding>
+            <element signature="method#closeALL#0;class#BaseDao#0" />
+            <element signature="method#executeQuery#0;class#BaseDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/UpCommdStatcServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/js/AddCommodiy_attr.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddGood.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3276">
+          <caret line="156" column="45" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddBrand.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/tool/AddCommodity_attr.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/DelCommdServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/servlet/TopicServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2526">
+          <caret line="208" column="27" lean-forward="true" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doGet#0;class#TopicServlet#0" />
+            <element signature="method#login#0;class#TopicServlet#0" />
+            <element signature="method#exit#0;class#TopicServlet#0" />
+            <element signature="method#register#0;class#TopicServlet#0" />
+            <element signature="method#AddCommClass#0;class#TopicServlet#0" />
+            <element signature="method#DelCommClass#0;class#TopicServlet#0" />
+            <element signature="method#getCommoditys#0;class#TopicServlet#0" />
+            <element signature="method#AddBrand#0;class#TopicServlet#0" />
+            <element signature="method#AddCommodiyType#0;class#TopicServlet#0" />
+            <element signature="method#SelectCommType#0;class#TopicServlet#0" />
+            <element signature="method#delCommodiyType#0;class#TopicServlet#0" />
+            <element signature="method#getCommClass#0;class#TopicServlet#0" />
+            <element signature="method#getClass#0;class#TopicServlet#0" />
+            <element signature="method#submitCommd#0;class#TopicServlet#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/BrandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="method#getBrandCount#0;class#BrandDao#0" />
+            <element signature="method#getBrandInfo#0;class#BrandDao#0" />
+            <element signature="method#getBrandInfoCount#0;class#BrandDao#0" />
+            <element signature="method#getBrandlist#0;class#BrandDao#0" />
+            <element signature="method#addimag#0;class#BrandDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/CommodiyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="281" column="5" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/CommClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+          <folding>
+            <element signature="method#getCommClass#0;class#CommClassDao#0" />
+            <element signature="method#getcount#0;class#CommClassDao#0" />
+            <element signature="e#2293#2294#0" expanded="true" />
+            <element signature="e#2317#2318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/adminServlet/DelCommdClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/GoodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/commclass.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/js/commclass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/js/GoodsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/Commclassl.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
         </state>
       </provider>
     </entry>

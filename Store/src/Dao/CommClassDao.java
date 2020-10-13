@@ -70,4 +70,12 @@ public class CommClassDao extends BaseDao{
     	
     	return num;
     }
+	//修改商品信息 根据传递过来的字段和number值修改商品信息
+	public int updateCommodiyClassIsShow(int CommClass_Id,String fieID,int number){
+		return update("UPDATE commclass SET "+fieID+" = ? WHERE CommClass_Id=?",number,CommClass_Id);
+	}
+	//删除分类
+	public int DelClass(int CommdClass_id){
+    	return update("DELETE FROM commclass WHERE CommClass_Id =?",CommdClass_id);
+	}
 }

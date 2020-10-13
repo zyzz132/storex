@@ -26,7 +26,7 @@ public class bill {
 
     private  String Recipients; //收件人姓名
 
-    private  String phne;   //收件人电话
+    private  String phone;   //收件人电话
 
     private  String postcode;   //邮政编码
 
@@ -131,12 +131,12 @@ public class bill {
         Recipients = recipients;
     }
 
-    public String getPhne() {
-        return phne;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPhne(String phne) {
-        this.phne = phne;
+    public void setPhone(String phne) {
+        this.phone = phne;
     }
 
     public String getPostcode() {
@@ -158,7 +158,7 @@ public class bill {
         Bill_state = bill_state;
         Bill_type = bill_type;
         Recipients = recipients;
-        this.phne = phne;
+        this.phone = phne;
         this.postcode = postcode;
         this.payState = payState;
         this.list = list;
@@ -174,7 +174,7 @@ public class bill {
         Bill_state = bill_state;
         Bill_type = bill_type;
         Recipients = recipients;
-        this.phne = phne;
+        this.phone = phne;
         this.postcode = postcode;
         this.payState = payState;
         this.list = list;

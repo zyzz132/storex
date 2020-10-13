@@ -82,7 +82,7 @@ public class CommodiyDao extends BaseDao{
 			}
 			
 		}
-		return 1;
+		return num;
 	}
 	//获取商品信息
 	public List<Commodity> getCommClass(int page, int limit){
@@ -95,10 +95,9 @@ public class CommodiyDao extends BaseDao{
         ResultSet rs=null;
         try {
 			ps=conn.prepareStatement(sql);
-			if(page==1){
-				ps.setInt(1, page-1);
-			}else{
+			if(page>=1){
 				ps.setInt(1, (page-1)*limit);
+
 			}
 			ps.setInt(2, limit);
 			rs=ps.executeQuery();
@@ -233,5 +232,52 @@ public class CommodiyDao extends BaseDao{
 		}
 		return commodity;
 	}
+	//修改商品分类是否显示  根据传入的字段值和number值
+	public int upstatic(int Commodity_Id,String fieID,int number){
+		return update("UPDATE commodity SET "+fieID+" = ? WHERE Commodity_Id = ?",number,Commodity_Id);
+	}
+	public int DelCommd(int Commodity_Id){
+		int num=0;
+		Connection conn=getConnection();
+		PreparedStatement ps=null;
 
+
+		try {
+			//关闭自动提交
+			conn.setAutoCommit(false);
+			String delsql1="DELETE FROM commodity WHERE Commodity_Id = ?";
+			num=updateAffair(conn,ps,delsql1,Commodity_Id);
+			if(num>=1){
+				try {
+					//删除SKU
+					String delsql2="DELETE FROM commodity_type WHERE Commodity_Id=?";
+					updateAffair(conn,ps,delsql2,Commodity_Id);
+					//删除相册
+					String delsql3="DELETE FROM commodity_image WHERE Commodity_Id=?";
+					updateAffair(conn,ps,delsql3,Commodity_Id);
+					//删除商品详情
+					String delsql4="DELETE FROM commodity_px WHERE Commodity_Id=?";
+					updateAffair(conn,ps,delsql4,Commodity_Id);
+				} catch (Exception e) {
+					//事务回滚
+					conn.rollback();
+					num=0;
+				}finally {
+					//提交事务
+					conn.commit();
+				}
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				conn.setAutoCommit(true);
+				closeALL(ps,conn);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return num;
+	}
 }

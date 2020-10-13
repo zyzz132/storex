@@ -11,7 +11,7 @@
 
 <div class="Commod_info">
     <div class="Commod_images">
-        <div class="CommdImagK"><img src="${requestScope.path}upload/${requestScope.commd.imageList.get(0).commImage_Url}" alt=""></div>
+        <div class="CommdImagK"><c:if test="${requestScope.commd.imageList.size()>=1}"> <img src="${requestScope.path}upload/${requestScope.commd.imageList.get(0).commImage_Url}" alt=""></c:if></div>
         <ul class="Commdimaglist">
             <c:forEach items="${requestScope.commd.imageList}" var="Cimg">
                 <li><img src="${requestScope.path}upload/${Cimg.commImage_Url}" alt=""></li>
@@ -41,13 +41,11 @@
             <c:forEach items="${requestScope.commd.commTypeList}" var="Ctype">
                 <div class="guige">${Ctype.commType_Name}</div>
             </c:forEach>
-
         </div>
         <div class="tool">数量
             <a href="javascript:" class="countbtn">-</a>
             <input type="text" value="1" class="count">
             <a href="javascript:" class="countbtn">+</a>
-
         </div>
         <div class="buy-Storev">
             <a href="javascipt:" class="buy">立即购买</a>
@@ -60,15 +58,8 @@
 </div>
 <div class="Commod-dtls">
     <!--左侧推荐-->
-    <div class="layui-col-md6 left-rcmd">
-        <div class="layui-card">
-            <div class="layui-card-header" style="background-color: #f2f2f2">好品推荐</div>
-            <div class="layui-card-body">
-                卡片式面板面板通常用于非白色背景色的主体内<br>
-                从而映衬出边框投影
-            </div>
-        </div>
-    </div>
+    <%@include file="recommend.jsp" %>
+
 
     <!--商品详情与评论 -->
     <div class="Commod-dtl-comment">
@@ -76,17 +67,11 @@
             <ul class="layui-tab-title">
                 <li class="layui-this">详情</li>
                 <li>评论</li>
-                <li>权限分配</li>
-                <li>商品管理</li>
-                <li>订单管理</li>
             </ul>
             <div class="layui-tab-content" >
                 <div class="layui-tab-item layui-show">${requestScope.commd.particulars.particulars}</div>
                 <div class="layui-tab-item">2</div>
-                <div class="layui-tab-item">3</div>
-                <div class="layui-tab-item">4</div>
-                <div class="layui-tab-item">5</div>
-                <div class="layui-tab-item">6</div>
+
             </div>
         </div>
     </div>

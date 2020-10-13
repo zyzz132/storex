@@ -45,6 +45,21 @@ public class BaseDao {
 
         return num;
     }
+    //事务修改
+    public int updateAffair(Connection conn,PreparedStatement ps,String sql,Object ...objects){
+        int num=0;
+        try{
+            ps=conn.prepareStatement(sql);
+            for (int i=0;i<objects.length;i++){
+                ps.setObject(i+1,objects[i]);
+            }
+            num=ps.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return num;
+    }
+    //关闭
     public void closeALL(Object ...objects){
         try{
             for (Object obj:objects ) {
@@ -63,7 +78,8 @@ public class BaseDao {
             e.printStackTrace();
         }
     }
-    protected ResultSet executeQuery(Connection conn,PreparedStatement pstmt,String sql, Object... params) {
+    //查询
+    public ResultSet executeQuery(Connection conn,PreparedStatement pstmt,String sql, Object... params) {
         conn = this.getConnection();
         ResultSet rs = null;
         try {
@@ -79,5 +95,27 @@ public class BaseDao {
             e.printStackTrace();
         }
         return rs;
+    }
+    //查询一个值
+    public Object executeOne(String sql, Object... objects){
+        Connection conn=getConnection();
+        Object num=null;
+        PreparedStatement ps =null;
+        ResultSet rs=null;
+        try {
+            ps=conn.prepareStatement(sql);
+            for (int i=0;i<objects.length;i++){
+                ps.setObject(i+1,objects[i]);
+            }
+            rs=ps.executeQuery();
+            if(rs.next()){
+                num=rs.getObject(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(rs,ps,conn);
+        }
+        return num;
     }
 }

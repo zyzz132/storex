@@ -57,7 +57,6 @@ public class admin  extends user implements CommodityTool, brandDao {
         return str;
     }
 
-
     //获取分类列表
     public String getCommClass(int page,int limit){
     	String sql="SELECT cl.CommClass_Id,cl.parentClass,cl.CommClass_Name,COUNT(cd.CommClass_Id) commodiyCount,cl.isShow,cl.isNavShow,cl.keyWord,cl.ClassDescribe,cl.sort FROM commclass cl LEFT  JOIN commodity cd ON cl.CommClass_Id=cd.CommClass_Id GROUP BY cl.CommClass_Id LIMIT ?,?";

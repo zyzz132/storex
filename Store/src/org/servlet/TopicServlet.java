@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 
 import java.util.List;
 
+import Dao.BrandDao;
 import entity.commodity_px;
 import org.brand.Brand;
 
@@ -34,6 +35,7 @@ public class TopicServlet extends HttpServlet {
         response.setHeader("content-type", "text/html;charset=UTF-8");
         response.setCharacterEncoding("utf-8");
         request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=UTF-8");
         user userinfo=(user)request.getSession().getAttribute("Userinfo");
         String prol=request.getParameter("prol");
         PrintWriter out=response.getWriter();
@@ -78,6 +80,9 @@ public class TopicServlet extends HttpServlet {
             case "submitCommd":
             	this.submitCommd(request,out);
             	break;
+            case "getClass":
+                getClass(request,out,userinfo);
+                break;
                 default:
                     out.println("url错误！");
         }
@@ -153,8 +158,14 @@ public class TopicServlet extends HttpServlet {
     }
     //获取商品信息表
     public void getCommoditys(HttpServletRequest request,PrintWriter out,user userinfo){
-    	int page=Integer.parseInt(request.getParameter("page"));
-    	int limit=Integer.parseInt(request.getParameter("limit"));
+        int page=0;
+        int limit=5;
+        if(request.getParameter("page")!=null){
+            page=Integer.parseInt(request.getParameter("page"));
+            limit=Integer.parseInt(request.getParameter("limit"));
+        }
+
+        BrandDao brandDao=new BrandDao();
     	CommodiyDao commDao=new CommodiyDao();
         List<Commodity> list=commDao.getCommClass(page, limit);
         //out.print(list.get(0).getSelling_price()+",\"market_price\":"+list.get(0).getMarket_price()+",\"warehousing\":"+list.get(0).getWarehousing()+",\"unit\":\"");
@@ -172,6 +183,7 @@ public class TopicServlet extends HttpServlet {
                     CommImage_Url+"\","+
                     "\"putaway\":"+list.get(i).getPutaway()+","+
                     "\"new_recommend\":"+list.get(i).getNew_recommend()+","+
+                    "\"brand_name\":\""+brandDao.getBrandName(list.get(i).getBrand_id())+"\","+
                     "\"recommend\":"+list.get(i).getRecommend()+"}";
             json.append(node);
             if(i<list.size()-1){
@@ -179,12 +191,21 @@ public class TopicServlet extends HttpServlet {
             }
         }
         json.append("]}");
+        System.out.println(json);
         out.print(json.toString());
     }
     //添加商品
     public void AddCommodity(HttpServletRequest request, HttpServletResponse response,PrintWriter out,user userinfo){
-        int CommClass_id_1=Integer.parseInt(request.getParameter("CommClass_id_1"));
-        int CommClass_id_2=Integer.parseInt(request.getParameter("CommClass_id_2"));
+
+        int CommClass_id_1=0;
+        int CommClass_id_2=0;
+        if(request.getParameter("CommClass_id_1")!=null){
+            CommClass_id_1=Integer.parseInt(request.getParameter("CommClass_id_1"));
+        }
+        if(request.getParameter("CommClass_id_2")!=null){
+            CommClass_id_2=Integer.parseInt(request.getParameter("CommClass_id_2"));
+        }
+
         int CommClass_id=0;
         if(CommClass_id_2>0){
             CommClass_id=CommClass_id_2;
@@ -357,6 +378,12 @@ public class TopicServlet extends HttpServlet {
         }
         sb.append("]}");
         out.print(sb.toString());
+    }
+    public void getClass(HttpServletRequest request ,PrintWriter out,user userinfo){
+        if(userinfo instanceof admin){
+            String str=((admin) userinfo).getFirstClass(Integer.parseInt(request.getParameter("id")));
+            out.println(str);
+        }
     }
     //
     public void submitCommd(HttpServletRequest request ,PrintWriter out){

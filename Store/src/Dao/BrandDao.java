@@ -118,4 +118,46 @@ public class BrandDao extends BaseDao{
 		}
 		return list;
 	}
+    //添加品牌图片
+	public int addimag(String imagename){
+
+	    int num=0;
+	    int id=0;
+	    String sql="INSERT INTO brand_images(TYPE,image_path) VALUES(0,?)";
+	    num=update(sql,imagename);
+	    if(num>=1){
+	    	String sql1="SELECT id FROM brand_images WHERE image_path=?";
+	    	Connection conn=getConnection();
+	    	PreparedStatement ps=null;
+	    	ResultSet rs=null;
+			try {
+				ps=conn.prepareStatement(sql1);
+				ps.setString(1,imagename);
+				rs=ps.executeQuery();
+				rs.next();
+				id=rs.getInt(1);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				closeALL(rs,ps,conn);
+			}
+
+		}
+	    return id;
+    }
+	public String getBrandName(int Brand_id){
+		String name="";
+		String sql="SELECT brand_name FROM brand WHERE id=?";
+		ResultSet rs= executeQuery(conn,ps,sql,Brand_id);
+        try {
+            rs.next();
+            name=rs.getString(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(rs,ps,conn);
+        }
+        return name;
+
+    }
 }

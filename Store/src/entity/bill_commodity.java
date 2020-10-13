@@ -4,6 +4,15 @@ public class bill_commodity {
     private  int BillComm_Id;   //订单商品ID
 
     private  int CommType_Id;   //商品型号ID
+    private int Bill_Id;    //
+
+    public int getBill_Id() {
+        return Bill_Id;
+    }
+
+    public void setBill_Id(int bill_Id) {
+        Bill_Id = bill_Id;
+    }
 
     private  int Count;     //数量
 

@@ -6,12 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="sqlreq.*" %>
+<%@ page import="com.mysql.cj.Session" %>
+<% String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
+    request.getSession().setAttribute("path",Storepath);
+%>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>易购物</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
+
     <script src="../js/jquery-1.12.2.js" type="text/javascript"></script>
     <script src="js/admin.js" type="text/javascript"></script>
     <style>
@@ -46,7 +51,7 @@
                 %>
                     <ul class="layui-nav layui-layout-right">
                         <li class="layui-nav-item">
-                            <a href="javascript:;">
+                            <a href="javascript:">
                                 <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                                 <span id="user_name"><%=userinfo.get_name()%></span>
                             </a>
@@ -76,7 +81,7 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">所有商品</a>
+                    <a class="" href="javascript:">所有商品</a>
                     <dl class="layui-nav-child">
                         <dd><a  href="#" class="site-demo-active" data-id="" data-type="CommclassList" >商品分类</a></dd>
                         <dd><a href="#" class="site-demo-active" data-type="GoodsList">商品管理</a></dd>
@@ -84,16 +89,16 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">订单记录</a>
+                    <a href="javascript:">订单记录</a>
                     <dl class="layui-nav-child">
                         <dd><a href="Bill.jsp"  target="myiframe">订单记录</a></dd>
-                        <dd><a href="javascript:;">订单设置</a></dd>
+                        <dd><a href="javascript:">订单设置</a></dd>
                         <dd><a href="">退货处理</a></dd>
                         <dd><a href="">退货处理</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">营销</a>
+                    <a href="javascript:">营销</a>
                     <dl class="layui-nav-child">
                         <dd><a href="#" class="site-demo-active" data-type="SskillList">秒杀活动列表</a></dd>
                         <dd><a href=""  target="myiframe">优惠券列表</a></dd>
@@ -103,10 +108,10 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">用户管理</a>
+                    <a href="javascript:">用户管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="UserList.jsp" target="myiframe">用户信息</a></dd>
-                        <dd><a href="javascript:;">用户订单</a></dd>
+                        <dd><a href="javascript:">用户订单</a></dd>
                     </dl>
                 </li>
             </ul>

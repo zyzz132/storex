@@ -6,12 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="sqlreq.*" %>
+<%@ page import="com.mysql.cj.Session" %>
+<% String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
+    request.getSession().setAttribute("path",Storepath);
+%>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>易购物</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
+
     <script src="../js/jquery-1.12.2.js" type="text/javascript"></script>
     <script src="js/admin.js" type="text/javascript"></script>
     <style>

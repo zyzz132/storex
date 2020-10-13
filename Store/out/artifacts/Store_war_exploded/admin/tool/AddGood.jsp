@@ -58,7 +58,7 @@
                 %>
             </select>
         </div>
-        <div class="layui-input-inline">
+        <div class="layui-input-inline class-2" style="display: none">
             <select name="CommClass_id_2" class="selectB" >
                 <option value="0">请选择</option>
             </select>
@@ -149,11 +149,20 @@
                 $.ajax({
                     url:'../../topic',
                     type:'post',
-                    data:{id:data.value,prol:'chx'},
+                    data:{id:data.value,prol:'getClass'},
                     dataType:'text',
                     success:function (rst) {
-                        if(rst.indexOf(""))
-                        $(".selectB").html(rst);
+
+                        if(rst.indexOf(">")>1){
+                            $(".selectB").html(rst);
+                            $(".class-2").show();
+                            console.log(rst);
+                        }else{
+                            console.log(rst);
+                            $(".selectB").html(rst);
+                            $(".class-2").hide();
+                        }
+
                         form.render('select'); //刷新select选择框渲染
                     },
                     error:function(xhr){alert('jsp页面有错误！'+xhr.responseText);}
