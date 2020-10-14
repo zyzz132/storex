@@ -25,8 +25,7 @@ public class CommodityImageDao extends BaseDao{
 
 		String sql="SELECT * FROM commodity_image WHERE Commodity_Id=?";
 		List<CommodityImage> list=new ArrayList<CommodityImage>();
-		CommoidyTypeDao ctdao=new CommoidyTypeDao();
-        Connection conn =getConnection();
+		Connection  conn=getConnection();
         PreparedStatement ps=null;
         ResultSet rs=null;
         try {

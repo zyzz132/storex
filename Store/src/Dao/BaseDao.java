@@ -12,7 +12,7 @@ public class BaseDao {
     
 
 
-    public Connection getConnection(){
+    public synchronized  Connection getConnection(){
     	Connection conn=null;
     	try {
 			Context ctx=new InitialContext();

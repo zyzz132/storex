@@ -17,7 +17,7 @@
 <body class="listtable">
   <div class="subject">
     <div class="tool box_B">
-      <span>数据列表</span>
+
       <a href="javascript:add2()" class="btn_B">添加</a>
     </div>
 

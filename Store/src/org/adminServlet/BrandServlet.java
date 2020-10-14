@@ -18,6 +18,16 @@ import java.util.List;
 public class BrandServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+
+        this.doPost(request, resp);
+
+
+        //request.getRequestDispatcher("BrandList.jsp").forward(request,resp);
+
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+
         String Storepath=request.getScheme() + "://"+request.getServerName()+":"+request.getServerPort()+ request.getContextPath()+"/";
         request.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=UTF-8");
@@ -25,6 +35,7 @@ public class BrandServlet extends HttpServlet {
         PrintWriter out=resp.getWriter();
         String Spage=request.getParameter("page");
         String brand_name=request.getParameter("suo");
+        System.out.println(brand_name);
         int page=1;
         int limit=10;
         if(Spage!=null){
@@ -46,14 +57,5 @@ public class BrandServlet extends HttpServlet {
         sb.append("]}");
         System.out.println(bs.getBrandInfoCount(null));
         out.println(sb.toString());
-
-
-
-        //request.getRequestDispatcher("BrandList.jsp").forward(request,resp);
-
-    }
-
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doGet(req, resp);
     }
 }

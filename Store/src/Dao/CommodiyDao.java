@@ -123,8 +123,7 @@ public class CommodiyDao extends BaseDao{
 				commd.setGuarantee1(rs.getInt("guarantee1"));
 				commd.setGuarantee2(rs.getInt("guarantee2"));
 				commd.setGuarantee3(rs.getInt("guarantee3"));
-				commd.setCommTypeList(ctdao.getCommID_Types(commd.getCommodity_Id()));
-				commd.setImageList(cimgdao.getCommodityImage(rs.getInt("Commodity_Id")));
+
 				list.add(commd);
 			}
 		} catch (SQLException e) {
@@ -133,7 +132,10 @@ public class CommodiyDao extends BaseDao{
 		}finally{
 			closeALL(rs,ps,conn);
 		}
-        
+        for(int i=0;i<list.size();i++){
+        	list.get(i).setCommTypeList(ctdao.getCommID_Types(list.get(i).getCommodity_Id()));
+        	list.get(i).setImageList(cimgdao.getCommodityImage(list.get(i).getCommodity_Id()));
+		}
         return list;
     }
     public int getcount(){
@@ -220,16 +222,18 @@ public class CommodiyDao extends BaseDao{
 				commodity.setUnit(rs.getString("unit"));
 				commodity.setSubname(rs.getString("subname"));
 				commodity.setTime(rs.getString("Time"));
-				commodity.setCommTypeList(ctdao.getCommID_Types(rs.getInt("Commodity_Id")));
-				commodity.setImageList(cimgdao.getCommodityImage(rs.getInt("Commodity_Id")));
-				commodity.setParticulars(pxDao.Selcommodity_px(rs.getInt("Commodity_Id")));
+
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
+			System.out.println("getID_Commodiy-----------");
 			closeALL(rs,ps,conn);
 		}
+		commodity.setCommTypeList(ctdao.getCommID_Types(commodity.getCommodity_Id()));
+		commodity.setImageList(cimgdao.getCommodityImage(commodity.getCommodity_Id()));
+		commodity.setParticulars(pxDao.Selcommodity_px(commodity.getCommodity_Id()));
 		return commodity;
 	}
 	//修改商品分类是否显示  根据传入的字段值和number值
@@ -279,5 +283,46 @@ public class CommodiyDao extends BaseDao{
 			}
 		}
 		return num;
+	}
+	//随即查询十条数据
+	public  List<Commodity> Seltencom(){
+		List<Commodity> list=new ArrayList<Commodity>();
+		String sql="SELECT * FROM commodity  ORDER BY  RAND() LIMIT 10";
+		Connection conn=getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		try {
+			ps= conn.prepareStatement(sql);
+			rs=ps.executeQuery();
+			while (rs.next()){
+				Commodity cp=new Commodity();
+				cp.setCommodity_Id(rs.getInt("Commodity_Id"));
+				cp.setCommodity_Name(rs.getString("Commodity_name"));
+				cp.setCommClass_Id(rs.getInt("CommClass_Id"));
+				cp.setTime(rs.getString("Time"));
+				cp.setSubname(rs.getString("subname"));
+				cp.setUnit(rs.getString("unit"));
+				cp.setBrand_id(rs.getInt("brand_id"));
+				cp.setCommodity_No(rs.getString("Commodity_No"));
+				cp.setWarehousing(rs.getInt("warehousing"));
+				cp.setSort(rs.getInt("sort"));
+				cp.setSelling_price(rs.getDouble("selling_price"));
+				cp.setMarket_price(rs.getDouble("market_price"));
+				cp.setWeight(rs.getString("weight"));
+				cp.setCommodity_introduce(rs.getString("Commodity_introduce"));
+				cp.setPutaway(rs.getInt("putaway"));
+				cp.setNew_recommend(rs.getInt("new_recommend"));
+				cp.setRecommend(rs.getInt("recommend"));
+				cp.setGuarantee1(rs.getInt("guarantee1"));
+				cp.setGuarantee2(rs.getInt("guarantee2"));
+				cp.setGuarantee3(rs.getInt("guarantee3"));
+				list.add(cp);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			closeALL(rs,ps,conn);
+		}
+		return list;
 	}
 }

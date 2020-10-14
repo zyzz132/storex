@@ -191,7 +191,6 @@ public class TopicServlet extends HttpServlet {
             }
         }
         json.append("]}");
-        System.out.println(json);
         out.print(json.toString());
     }
     //添加商品

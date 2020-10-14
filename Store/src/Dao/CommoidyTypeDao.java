@@ -62,7 +62,7 @@ public class CommoidyTypeDao extends BaseDao{
 	public List<CommodityType> getCommID_Types(int Commodity_id){
 		String sql="SELECT * FROM commodity_type WHERE Commodity_Id=?";
 		List<CommodityType> list =new ArrayList<CommodityType>();
-		Connection conn=getConnection();
+		Connection  conn=getConnection();
 		PreparedStatement ps=null;
 		ResultSet rs=null;
 		try {

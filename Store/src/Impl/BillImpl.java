@@ -27,8 +27,8 @@ public interface BillImpl {
     //e.Int 订单类型
     //f.Int page	//当前页面
     //g.Int limit	//每页显示数量
-    List<bill> getBill(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type, int page, int limit);
+    List<bill> getBill(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type,int User_id, int page, int limit);
 
     //查询根据（订单编号，收货人姓名，订单日期,订单状态，订单类型）查询数据总数量 返回int
-    int getBillCount(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type);
+    int getBillCount(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type,int User_id);
 }

@@ -41,15 +41,17 @@ public class BrandDao extends BaseDao{
 		}
 		String sql = "SELECT  b.*,COUNT(c.Commodity_Id) AS COUNT "+
 					"FROM brand b LEFT JOIN commodity c ON b.id = c.brand_id "+WhereBrand_name+
-					"GROUP BY b.id "
+					" GROUP BY b.id "
 				+"LIMIT ?,?";
+
 		if(currPageNo==1){
 			currPageNo=currPageNo-1;
 		}else{
 			currPageNo=(currPageNo-1)*numsPerPage;
 		}
-		if(brand_name !=null && !brand_name.equals("")){
+		if(brand_name !=null && brand_name.length()>0){
 			rs = this.executeQuery(conn,ps,sql, brand_name,currPageNo,numsPerPage);
+
 		}else{
 			rs = this.executeQuery(conn,ps,sql, currPageNo,numsPerPage);
 		}
@@ -145,7 +147,7 @@ public class BrandDao extends BaseDao{
 		}
 	    return id;
     }
-	public String getBrandName(int Brand_id){
+	public synchronized String getBrandName(int Brand_id){
 		String name="";
 		String sql="SELECT brand_name FROM brand WHERE id=?";
 		ResultSet rs= executeQuery(conn,ps,sql,Brand_id);

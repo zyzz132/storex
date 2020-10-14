@@ -45,7 +45,7 @@ body{
 .lc_c>.lc_wc>.bz_x>.bz{border:3px solid #67c23a;}
 
 .formPadden{padding-right: 30px;}
-
+.subject .layui-inline{padding: 10px 0}
 
 .admin_login_box{background-color: #fff;border-radius: 4px;height: 290px;left: 50%;margin-left: -220px;margin-top: -180px;padding: 35px 40px 50px;position: absolute;top: 50%;width: 360px;}
 .rlogo{text-align: center;font-size: 26px;color: #444;cursor: pointer;height: 40px;margin-bottom: 40px;overflow: hidden;}

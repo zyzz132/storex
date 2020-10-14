@@ -61,6 +61,7 @@ public class commodity_pxDao extends BaseDao implements commodity_pximpl {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            System.out.println("Selcommodity_px-----------");
             closeALL(rs,ps,conn);
         }
 

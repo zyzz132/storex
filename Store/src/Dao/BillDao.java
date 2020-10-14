@@ -88,7 +88,7 @@ public class BillDao extends BaseDao implements BillImpl {
     }
 
     //查询订单 根据（订单编号，收货人姓名，订单日期,订单状态，订单类型）查询数据 返回List<bill >集合
-    public List<bill> getBill(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type, int page, int limit) {
+    public List<bill> getBill(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type,int User_id, int page, int limit) {
         List<bill> list = new ArrayList<bill>();
         StringBuffer sbf = new StringBuffer("SELECT * FROM bill WHERE 1=1");
         if(Bill_number!=null){
@@ -100,14 +100,14 @@ public class BillDao extends BaseDao implements BillImpl {
         if(Bill_Time!=null){
             sbf.append(" and Bill_Time = "+Bill_Time);
         }
-        if(Bill_state!=0){
+        if(Bill_state>=0){
             sbf.append(" and Bill_state = "+Bill_state);
         }
-        if(Bill_type!=0){
+        if(Bill_type>=0){
             sbf.append(" and Bill_type = "+Bill_type);
         }
-        if(page>0){
-            sbf.append(" limit "+(page-1)*limit+" , "+limit);
+        if(User_id>=0){
+            sbf.append(" and User_Id = "+User_id);
         }
         Connection conn = getConnection();
         PreparedStatement ps=null;
@@ -139,7 +139,7 @@ public class BillDao extends BaseDao implements BillImpl {
     }
 
     //查询根据（订单编号，收货人姓名，订单日期,订单状态，订单类型）查询数据总数量 返回int
-    public int getBillCount(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type) {
+    public int getBillCount(String Bill_number, String Recipients, Date Bill_Time, int Bill_state, int Bill_type,int User_id) {
         int num=-1;
         StringBuffer sbf = new StringBuffer("SELECT COUNT(1) FROM bill WHERE 1=1");
         if(Bill_number!=null){
@@ -151,12 +151,16 @@ public class BillDao extends BaseDao implements BillImpl {
         if(Bill_Time!=null){
             sbf.append(" and Bill_Time = "+Bill_Time);
         }
-        if(Bill_state!=0){
+        if(Bill_state>=0){
             sbf.append(" and Bill_state = "+Bill_state);
         }
-        if(Bill_type!=0){
+        if(Bill_type>=0){
             sbf.append(" and Bill_type = "+Bill_type);
         }
+        if(User_id>=0){
+            sbf.append(" and User_Id = "+User_id);
+        }
+        System.out.println(sbf.toString());
         Connection conn = getConnection();
         PreparedStatement ps=null;
         ResultSet rs = executeQuery(conn,ps,sbf.toString());

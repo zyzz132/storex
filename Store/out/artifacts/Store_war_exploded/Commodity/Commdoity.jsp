@@ -70,6 +70,14 @@
             </ul>
             <div class="layui-tab-content" >
                 <div class="layui-tab-item layui-show">${requestScope.commd.particulars.particulars}</div>
+                <script>
+                    $("figure").each(function () {
+                        var img=$(this).children("img").attr("src");
+                        img=img.replace('../../','./');
+                        $(this).children("img").attr("src",img);
+                    })
+
+                </script>
                 <div class="layui-tab-item">2</div>
 
             </div>

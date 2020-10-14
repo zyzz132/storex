@@ -49,7 +49,7 @@ public class CommdFileServlet extends HttpServlet {
                             //写出文件
                             System.out.println(fullName.getName());
                             item.write(fullName);
-                            out.print("{\"uploaded\":1,\"url\": \""+path+"upload/Commod/"+fullName.getName()+"\" }");
+                            out.print("{\"uploaded\":1,\"url\": \"../../upload/Commod/"+fullName.getName()+"\" }");
 
                         }
                     }

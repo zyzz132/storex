@@ -11,17 +11,19 @@ public class mysqlConn {
     public user login(String username,String password){
         user userInfo=null;
         Connection conn =bd.getConnection();
+        PreparedStatement pstam=null;
+        ResultSet rs=null;
         try{
             String sql="SELECT * FROM users WHERE (Account_number=? OR phone=? OR Email=?  )AND  PASSWORD =?";
             //String sql2="UPDATE users SET newDateTime =NOW() WHERE (Account_number=? OR phone=? OR Email=?  )AND  PASSWORD =?";
-            PreparedStatement pstam=conn.prepareStatement(sql);
+            pstam=conn.prepareStatement(sql);
             //PreparedStatement pstam2=conn.prepareStatement(slq2);
             pstam.setString(1,username);
             pstam.setString(2,username);
             pstam.setString(3,username);
             pstam.setString(4,password);
 
-            ResultSet rs=pstam.executeQuery();
+            rs=pstam.executeQuery();
             while(rs.next()){
                 if(rs.getRow()==1){
                     //判断用户类型
@@ -52,6 +54,8 @@ public class mysqlConn {
             if(conn!=null){
 
                 try {
+                    rs.close();
+                    pstam.close();
                     conn.close();
                 }catch (SQLException e){
                     e.printStackTrace();
